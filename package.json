@@ -2,10 +2,10 @@
   "name": "profile",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "Karen Guo <karen.guo@tuangru.com>",
+  "author": "Karen Guo <krn.x.guo@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --port 8070 --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",

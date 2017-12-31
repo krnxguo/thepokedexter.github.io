@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <button type="button" class="btn btn-danger">Bootstrap Button</button>
+    <v-btn>Vue Button</v-btn>
   </div>
 </template>
 

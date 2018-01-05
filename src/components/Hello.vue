@@ -1,18 +1,20 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <v-btn>Vue Button</v-btn>
+    <contact-info></contact-info>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  // components: {
+  //   'contact-info': ConctactInfo
+  // }
 }
 </script>
 

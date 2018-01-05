@@ -9,10 +9,13 @@ import('../node_modules/vuetify/dist/vuetify.min.css')
 Vue.config.productionTip = false
 Vue.use(Vuetify)
 
+import ConctactInfo from './components/ContactInfo.vue'
+Vue.component('contact-info', ConctactInfo)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: { App, ConctactInfo }
 })

@@ -5,11 +5,14 @@
     <hr/>
     <v-container fluid grid-list>
       <v-layout>
-        <v-flex d-flex xs2 sm6 md4>
+        <v-flex d-flex xs12 sm6 md4>
           <h3>{{ location }}</h3>
         </v-flex>
-        <v-flex d-flex xs2 sm6 md4>
+        <v-flex d-flex xs12 sm6 md4>
           <h3>{{ phone }}</h3>
+        </v-flex>
+        <v-flex d-flex xs12 sm6 md4>
+          <h3>{{ email }}</h3>
         </v-flex>
       </v-layout>
     </v-container>

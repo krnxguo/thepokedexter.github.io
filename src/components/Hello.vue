@@ -11,10 +11,7 @@ export default {
   data () {
     return {
     }
-  },
-  // components: {
-  //   'contact-info': ConctactInfo
-  // }
+  }
 }
 </script>
 

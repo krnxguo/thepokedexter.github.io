@@ -11,14 +11,17 @@
                 <v-flex xs12>
                   <h2>{{ title }}</h2>
                 </v-flex>
-                <v-flex xs12 sm4>
-                  <h3>{{ location }}</h3>
-                </v-flex>
-                <v-flex xs12 sm4>
-                  <h3>{{ phone }}</h3>
-                </v-flex>
-                <v-flex xs12 sm4>
-                  <h3>{{ email }}</h3>
+                <v-flex xs12>
+                  <span v-for="(info) in contactInfo" :key="info.field">
+                    <v-layout row wrap>
+                      <v-flex xs2>
+                        <strong>{{ info.field }}</strong>
+                      </v-flex>
+                      <v-flex xs10>
+                        {{ info.value }}
+                      </v-flex>
+                    </v-layout>
+                  </span>
                 </v-flex>
               </v-layout>
             </v-container>
@@ -37,7 +40,12 @@ export default {
       title: 'Full Stack Software Developer',
       location: 'Vancouver, BC',
       phone: '778.858.8070',
-      email: 'krn.x.guo@gmail.com'
+      email: 'krn.x.guo@gmail.com',
+      contactInfo: [
+        {field: 'Location', value: 'Vancouver, BC'},
+        {field: 'Phone', value: '778.858.8070'},
+        {field: 'Email', value: 'krn.x.guo@gmail.com'}
+      ]
     }
   }
 }

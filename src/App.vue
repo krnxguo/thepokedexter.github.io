@@ -1,24 +1,17 @@
 <template>
   <v-app>
+    <contact-info></contact-info>
   </v-app>
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        clipped: false,
-        drawer: true,
-        fixed: false,
-        items: [{
-          icon: 'bubble_chart',
-          title: 'Inspire'
-        }],
-        miniVariant: false,
-        right: true,
-        rightDrawer: false,
-        title: 'Vuetify.js'
-      }
+import ContactInfo from './components/ContactInfo'
+
+export default {
+  components: {ContactInfo},
+  data () {
+    return {
     }
   }
+}
 </script>

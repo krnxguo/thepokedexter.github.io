@@ -8,13 +8,13 @@
         <v-flex xs12>
           <h2>{{ title }}</h2>
         </v-flex>
-        <v-flex xs4>
+        <v-flex xs12 sm4>
           <h3>{{ location }}</h3>
         </v-flex>
-        <v-flex xs4>
+        <v-flex xs12 sm4>
           <h3>{{ phone }}</h3>
         </v-flex>
-        <v-flex xs4>
+        <v-flex xs12 sm4>
           <h3>{{ email }}</h3>
         </v-flex>
       </v-layout>

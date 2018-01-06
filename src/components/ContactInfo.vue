@@ -1,24 +1,30 @@
 <template>
   <div id="contact-info">
-    <v-container>
-      <v-layout row wrap>
-        <v-flex xs12>
-          <h1>{{ name }}</h1>
-        </v-flex>
-        <v-flex xs12>
-          <h2>{{ title }}</h2>
-        </v-flex>
-        <v-flex xs12 sm4>
-          <h3>{{ location }}</h3>
-        </v-flex>
-        <v-flex xs12 sm4>
-          <h3>{{ phone }}</h3>
-        </v-flex>
-        <v-flex xs12 sm4>
-          <h3>{{ email }}</h3>
+      <v-layout>
+        <v-flex xs12 sm10 offset-sm1>
+          <v-card>
+            <v-container>
+              <v-layout row wrap>
+                <v-flex xs12>
+                  <h1>{{ name }}</h1>
+                </v-flex>
+                <v-flex xs12>
+                  <h2>{{ title }}</h2>
+                </v-flex>
+                <v-flex xs12 sm4>
+                  <h3>{{ location }}</h3>
+                </v-flex>
+                <v-flex xs12 sm4>
+                  <h3>{{ phone }}</h3>
+                </v-flex>
+                <v-flex xs12 sm4>
+                  <h3>{{ email }}</h3>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-card>
         </v-flex>
       </v-layout>
-    </v-container>
   </div>
 </template>
 

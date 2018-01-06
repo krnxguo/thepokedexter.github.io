@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    <contact-info></contact-info>
+    <v-container grid-list-xl>
+      <contact-info></contact-info>
+    </v-container>
   </v-app>
 </template>
 

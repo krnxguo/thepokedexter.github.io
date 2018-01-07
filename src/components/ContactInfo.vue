@@ -1,32 +1,32 @@
 <template>
   <div id="contact-info">
       <v-layout>
-        <v-flex xs12 sm10 lg8 offset-sm1 offset-lg2>
+        <v-flex xs12 sm10 lg8 offset-xs0 offset-sm1 offset-lg2>
           <v-card>
             <v-container fill-height>
               <v-layout row wrap>
                 <v-flex id="contact-info-text-column" xs12 md8>
-                  <v-flex xs12>
+                  <v-flex id="name" xs12>
                     <h1>{{ name }}</h1>
                   </v-flex>
-                  <v-flex xs12>
+                  <v-flex id="title" xs12>
                     <h2>{{ title }}</h2>
                   </v-flex>
-                  <v-flex xs12>
+                  <v-flex xs8 sm6 md12 offset-xs2 offset-sm3 offset-md0>
                     <span v-for="(info) in contactInfo" :key="info.field">
                       <v-layout row wrap>
-                        <v-flex xs2 md4>
+                        <v-flex xs4 md6>
                           <strong>{{ info.field }}</strong>
                         </v-flex>
-                        <v-flex xs10 md8>
+                        <v-flex class="info-value" xs8 md6>
                           {{ info.value }}
                         </v-flex>
                       </v-layout>
                     </span>
                   </v-flex>
-                  <v-flex xs12 md12>
-                    <v-layout row wrap>
-                      <v-flex xs6 sm4 v-for="(icon) in iconLinks" :key="icon.icon">
+                  <v-flex xs10 sm8 md12 offset-xs1 offset-sm2 offset-md0>
+                    <v-layout id="icon-row" row wrap>
+                      <v-flex v-for="(icon) in iconLinks" :key="icon.icon">
                         <a v-bind:href="icon.link" target="_blank">
                           <v-icon>{{ icon.icon }}</v-icon>
                           {{ icon.label }}
@@ -93,6 +93,18 @@ a {
     margin-top: 24px;
     margin-right: auto;
     margin-left: auto;
+  }
+  #name {
+    text-align: center;
+  }
+  #title {
+    text-align: center;    
+  }
+  .info-value {
+    text-align: right;
+  }
+  #icon-row {
+    text-align: center;
   }
 }
 </style>

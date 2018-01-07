@@ -37,7 +37,7 @@
               </v-flex>
               <v-flex id="image-column" xs12 md4>
                 <v-layout row-wrap align-center>
-                  <img id="profile-picture" src="/static/default-profile-pic.jpg" alt="Profile Picture"/>
+                  <img id="profile-picture" src="../assets/default-profile-pic.jpg" alt="Profile Picture"/>
                 </v-layout>
               </v-flex>
             </v-layout>

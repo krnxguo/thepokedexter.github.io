@@ -7,6 +7,8 @@ import 'vuetify/dist/vuetify.css'
 
 import App from './App'
 
+import './styles.css'
+
 Vue.use(Vuetify)
 
 Vue.config.productionTip = false

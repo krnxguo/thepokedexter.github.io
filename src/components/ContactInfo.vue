@@ -94,9 +94,6 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
-  .heading {
-    text-align: center;
-  }
   .contact {
     text-align: right;
   }

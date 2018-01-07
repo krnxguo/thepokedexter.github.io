@@ -58,7 +58,7 @@ export default {
       ],
       iconLinks: [
         {icon: 'fa-github', link: 'https://github.com/ThePokedexter', label: 'ThePokedexter'},
-        {icon: 'fa-linkedin', link: 'https://linkedin.com/in/kxguo', label: 'kxguo'}
+        {icon: 'fa-linkedin-square', link: 'https://linkedin.com/in/kxguo', label: 'kxguo'}
       ]
     }
   }

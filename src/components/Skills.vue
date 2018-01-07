@@ -2,9 +2,11 @@
   <div id="skills">
     <v-layout>
       <v-flex xs12 sm10 lg8 offset-xs0 offset-sm1 offset-lg2>
-        <v-card>
+        <v-card dark color="green">
           <v-container>
-            Skills
+            <v-flex xs12>
+              <h2 class="heading">Skills</h2>
+            </v-flex>
           </v-container>
         </v-card>
       </v-flex>

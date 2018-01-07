@@ -5,37 +5,37 @@
           <v-card>
             <v-container fill-height>
               <v-layout row wrap>
-                <v-flex id="contact-info-text-column" xs12 md8>
-                  <v-flex id="name" xs12>
+                <v-flex id="text-column" xs12 md8>
+                  <v-flex class="heading" xs12>
                     <h1>{{ name }}</h1>
                   </v-flex>
-                  <v-flex id="title" xs12>
+                  <v-flex class="heading" xs12>
                     <h2>{{ title }}</h2>
                   </v-flex>
                   <v-flex xs8 sm6 md12 offset-xs2 offset-sm3 offset-md0>
-                    <span v-for="(info) in contactInfo" :key="info.field">
+                    <span v-for="(ci) in contactInfo" :key="ci.method">
                       <v-layout row wrap>
                         <v-flex xs4 md6>
-                          <strong>{{ info.field }}</strong>
+                          <strong>{{ ci.method }}</strong>
                         </v-flex>
-                        <v-flex class="info-value" xs8 md6>
-                          {{ info.value }}
+                        <v-flex class="contact" xs8 md6>
+                          {{ ci.contact }}
                         </v-flex>
                       </v-layout>
                     </span>
                   </v-flex>
                   <v-flex xs10 sm8 md12 offset-xs1 offset-sm2 offset-md0>
-                    <v-layout id="icon-row" row wrap>
-                      <v-flex v-for="(icon) in iconLinks" :key="icon.icon">
-                        <a v-bind:href="icon.link" target="_blank">
-                          <v-icon>{{ icon.icon }}</v-icon>
-                          {{ icon.label }}
+                    <v-layout id="social-media-icons" row wrap>
+                      <v-flex v-for="(sm) in socialMedia" :key="sm.icon">
+                        <a v-bind:href="sm.url" target="_blank">
+                          <v-icon>{{ sm.icon }}</v-icon>
+                          {{ sm.label }}
                         </a>
                       </v-flex>
                     </v-layout>
                   </v-flex>
                 </v-flex>
-                <v-flex id="profile-picture-column" xs12 md4>
+                <v-flex id="image-column" xs12 md4>
                   <v-layout row-wrap align-center>
                     <img id="profile-picture" src="/static/default-profile-pic.jpg" alt="Profile Picture"/>
                   </v-layout>
@@ -59,13 +59,13 @@ export default {
       phone: '778.858.8070',
       email: 'krn.x.guo@gmail.com',
       contactInfo: [
-        {field: 'Location', value: 'Vancouver, BC'},
-        {field: 'Phone', value: '778.858.8070'},
-        {field: 'Email', value: 'krn.x.guo@gmail.com'}
+        {method: 'Location', contact: 'Vancouver, BC'},
+        {method: 'Phone', contact: '778.858.8070'},
+        {method: 'Email', contact: 'krn.x.guo@gmail.com'}
       ],
-      iconLinks: [
-        {icon: 'fa-github', link: 'https://github.com/ThePokedexter', label: 'ThePokedexter'},
-        {icon: 'fa-linkedin-square', link: 'https://linkedin.com/in/kxguo', label: 'kxguo'}
+      socialMedia: [
+        {icon: 'fa-github', url: 'https://github.com/ThePokedexter', label: 'ThePokedexter'},
+        {icon: 'fa-linkedin-square', url: 'https://linkedin.com/in/kxguo', label: 'kxguo'}
       ]
     }
   }
@@ -83,10 +83,10 @@ a {
 }
 
 @media only screen and (max-width: 960px) {
-  #contact-info-text-column {
+  #text-column {
     order: 2;
   }
-  #profile-picture-column {
+  #image-column {
     order: 1;
   }
   #profile-picture {
@@ -94,16 +94,13 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
-  #name {
+  .heading {
     text-align: center;
   }
-  #title {
-    text-align: center;    
-  }
-  .info-value {
+  .contact {
     text-align: right;
   }
-  #icon-row {
+  #social-media-icons {
     text-align: center;
   }
 }

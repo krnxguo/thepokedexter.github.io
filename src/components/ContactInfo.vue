@@ -5,7 +5,7 @@
           <v-card>
             <v-container fill-height>
               <v-layout row wrap>
-                <v-flex xs12 md8>
+                <v-flex id="contact-info-text-column" xs12 md8>
                   <v-flex xs12>
                     <h1>{{ name }}</h1>
                   </v-flex>
@@ -35,7 +35,7 @@
                     </v-layout>
                   </v-flex>
                 </v-flex>
-                <v-flex xs12 md4>
+                <v-flex id="profile-picture-column" xs12 md4>
                   <v-layout row-wrap align-center>
                     <img id="profile-picture" src="/static/default-profile-pic.jpg" alt="Profile Picture"/>
                   </v-layout>
@@ -80,5 +80,19 @@ a {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+}
+
+@media only screen and (max-width: 960px) {
+  #contact-info-text-column {
+    order: 2;
+  }
+  #profile-picture-column {
+    order: 1;
+  }
+  #profile-picture {
+    margin-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 </style>

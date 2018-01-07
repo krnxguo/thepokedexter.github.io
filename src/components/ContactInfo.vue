@@ -23,12 +23,13 @@
                     </v-layout>
                   </span>
                 </v-flex>
-                <v-flex xs2>
-                  <v-icon>home</v-icon>
-                  thepokedexter
-                </v-flex>
-                <v-flex xs2>
-                  LinkedIn: link
+                <v-flex xs3 v-for="(icon) in iconLinks" :key="icon.icon">
+                  <span>
+                    <a v-bind:href="icon.link" target="_blank">
+                      <v-icon>{{ icon.icon }}</v-icon>
+                      {{ icon.label }}
+                    </a>
+                  </span>
                 </v-flex>
               </v-layout>
             </v-container>
@@ -54,10 +55,16 @@ export default {
         {field: 'Email', value: 'krn.x.guo@gmail.com'}
       ],
       iconLinks: [
-        {icon: 'home', link: 'github.com'},
-        {icon: 'alarm', link: 'linkedin.com'}
+        {icon: 'home', link: 'https://github.com/ThePokedexter', label: 'ThePokedexter'},
+        {icon: 'alarm', link: 'https://linkedin.com/in/kxguo', label: 'kxguo'}
       ]
     }
   }
 }
 </script>
+
+<style scoped>
+a {
+  text-decoration: none;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div id="contact-info">
       <v-layout>
-        <v-flex xs12 sm10 offset-sm1>
+        <v-flex xs12 sm10 lg8 offset-sm1 offset-lg2>
           <v-card>
             <v-container fill-height>
               <v-layout row wrap>
@@ -15,10 +15,10 @@
                   <v-flex xs12>
                     <span v-for="(info) in contactInfo" :key="info.field">
                       <v-layout row wrap>
-                        <v-flex xs2>
+                        <v-flex xs2 md4>
                           <strong>{{ info.field }}</strong>
                         </v-flex>
-                        <v-flex xs10>
+                        <v-flex xs10 md8>
                           {{ info.value }}
                         </v-flex>
                       </v-layout>

@@ -13,6 +13,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "mdi": "^2.1.19",
     "vue": "^2.5.3",
     "vue-router": "^3.0.1",
     "vuetify": "^0.17.4"

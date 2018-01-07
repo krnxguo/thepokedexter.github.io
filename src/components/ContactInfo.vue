@@ -23,6 +23,13 @@
                     </v-layout>
                   </span>
                 </v-flex>
+                <v-flex xs2>
+                  <v-icon>home</v-icon>
+                  thepokedexter
+                </v-flex>
+                <v-flex xs2>
+                  LinkedIn: link
+                </v-flex>
               </v-layout>
             </v-container>
           </v-card>
@@ -45,6 +52,10 @@ export default {
         {field: 'Location', value: 'Vancouver, BC'},
         {field: 'Phone', value: '778.858.8070'},
         {field: 'Email', value: 'krn.x.guo@gmail.com'}
+      ],
+      iconLinks: [
+        {icon: 'home', link: 'github.com'},
+        {icon: 'alarm', link: 'linkedin.com'}
       ]
     }
   }

@@ -6,6 +6,7 @@
           <v-container>
             <v-flex xs12>
               <h2 class="heading">Skills</h2>
+              <rating></rating>
             </v-flex>
           </v-container>
         </v-card>
@@ -15,7 +16,10 @@
 </template>
 
 <script>
+import Rating from './common/Rating'
+
 export default {
+  components: {Rating},
   data () {
     return {}
   }

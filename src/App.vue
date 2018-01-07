@@ -20,8 +20,7 @@ export default {
     Skills
   },
   data () {
-    return {
-    }
+    return {}
   }
 }
 </script>

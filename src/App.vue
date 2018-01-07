@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="v-app">
     <v-container grid-list-xl>
       <contact-info></contact-info>
       <introduction></introduction>
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style>
-body {
-  background-image: url("")
+#v-app {
+  background-image: url('./assets/gplaypattern.png');
 }
 </style>

@@ -23,13 +23,15 @@
                     </v-layout>
                   </span>
                 </v-flex>
-                <v-flex xs3 v-for="(icon) in iconLinks" :key="icon.icon">
-                  <span>
-                    <a v-bind:href="icon.link" target="_blank">
-                      <v-icon>{{ icon.icon }}</v-icon>
-                      {{ icon.label }}
-                    </a>
-                  </span>
+                <v-flex xs12>
+                  <v-layout row wrap>
+                    <v-flex xs6 sm4 v-for="(icon) in iconLinks" :key="icon.icon">
+                      <a v-bind:href="icon.link" target="_blank">
+                        <v-icon>{{ icon.icon }}</v-icon>
+                        {{ icon.label }}
+                      </a>
+                    </v-flex>
+                  </v-layout>
                 </v-flex>
               </v-layout>
             </v-container>

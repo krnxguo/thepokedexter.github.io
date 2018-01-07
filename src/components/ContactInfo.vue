@@ -55,8 +55,8 @@ export default {
         {field: 'Email', value: 'krn.x.guo@gmail.com'}
       ],
       iconLinks: [
-        {icon: 'home', link: 'https://github.com/ThePokedexter', label: 'ThePokedexter'},
-        {icon: 'alarm', link: 'https://linkedin.com/in/kxguo', label: 'kxguo'}
+        {icon: 'fa-github', link: 'https://github.com/ThePokedexter', label: 'ThePokedexter'},
+        {icon: 'fa-linkedin', link: 'https://linkedin.com/in/kxguo', label: 'kxguo'}
       ]
     }
   }

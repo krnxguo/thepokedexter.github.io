@@ -3,34 +3,41 @@
       <v-layout>
         <v-flex xs12 sm10 offset-sm1>
           <v-card>
-            <v-container>
+            <v-container fill-height>
               <v-layout row wrap>
-                <v-flex xs12>
-                  <h1>{{ name }}</h1>
-                </v-flex>
-                <v-flex xs12>
-                  <h2>{{ title }}</h2>
-                </v-flex>
-                <v-flex xs12>
-                  <span v-for="(info) in contactInfo" :key="info.field">
+                <v-flex xs12 md8>
+                  <v-flex xs12>
+                    <h1>{{ name }}</h1>
+                  </v-flex>
+                  <v-flex xs12>
+                    <h2>{{ title }}</h2>
+                  </v-flex>
+                  <v-flex xs12>
+                    <span v-for="(info) in contactInfo" :key="info.field">
+                      <v-layout row wrap>
+                        <v-flex xs2>
+                          <strong>{{ info.field }}</strong>
+                        </v-flex>
+                        <v-flex xs10>
+                          {{ info.value }}
+                        </v-flex>
+                      </v-layout>
+                    </span>
+                  </v-flex>
+                  <v-flex xs12 md12>
                     <v-layout row wrap>
-                      <v-flex xs2>
-                        <strong>{{ info.field }}</strong>
-                      </v-flex>
-                      <v-flex xs10>
-                        {{ info.value }}
+                      <v-flex xs6 sm4 v-for="(icon) in iconLinks" :key="icon.icon">
+                        <a v-bind:href="icon.link" target="_blank">
+                          <v-icon>{{ icon.icon }}</v-icon>
+                          {{ icon.label }}
+                        </a>
                       </v-flex>
                     </v-layout>
-                  </span>
+                  </v-flex>
                 </v-flex>
-                <v-flex xs12>
-                  <v-layout row wrap>
-                    <v-flex xs6 sm4 v-for="(icon) in iconLinks" :key="icon.icon">
-                      <a v-bind:href="icon.link" target="_blank">
-                        <v-icon>{{ icon.icon }}</v-icon>
-                        {{ icon.label }}
-                      </a>
-                    </v-flex>
+                <v-flex xs12 md4>
+                  <v-layout row-wrap align-center>
+                    <img id="profile-picture" src="/static/default-profile-pic.jpg" alt="Profile Picture"/>
                   </v-layout>
                 </v-flex>
               </v-layout>
@@ -68,5 +75,10 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
+}
+#profile-picture {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 </style>

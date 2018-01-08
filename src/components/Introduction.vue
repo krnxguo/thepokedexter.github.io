@@ -5,7 +5,7 @@
         <v-card>
           <v-container>
             <v-flex xs12>
-              <h2 class="heading headline">Introduction</h2>
+              <h2 class="headline">Introduction</h2>
             </v-flex>
             <v-flex xs12>
               <p>

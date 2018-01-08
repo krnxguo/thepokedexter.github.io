@@ -3,7 +3,10 @@
     <v-container grid-list-xl>
       <contact-info/>
       <introduction/>
-      <skills/>
+      <skills
+        title="Programming Languages"
+        :skills="programmingLanguages"
+      />
     </v-container>
   </v-app>
 </template>
@@ -20,7 +23,16 @@ export default {
     Skills
   },
   data () {
-    return {}
+    return {
+      programmingLanguages: [
+        {label: 'Javascript', rating: 5},
+        {label: 'Typescript', rating: 5},
+        {label: 'HTML/CSS', rating: 5},
+        {label: 'C#', rating: 3},
+        {label: 'C++', rating: 3},
+        {label: 'Python', rating: 2}
+      ]
+    }
   }
 }
 </script>

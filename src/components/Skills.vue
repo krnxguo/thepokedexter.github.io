@@ -5,8 +5,12 @@
         <v-card dark color="green">
           <v-container>
             <v-flex xs12>
-              <h2 class="heading">Skills</h2>
-              <rating></rating>
+              <h2 class="heading headline skills-heading">{{ title }}</h2>
+              <v-layout row wrap>
+                <v-flex v-for="(skill) in skills" :key="skill.label" xs12 sm6 md4>
+                  <rating :rating="skill.rating" :label="skill.label"></rating>
+                </v-flex>
+              </v-layout>
             </v-flex>
           </v-container>
         </v-card>
@@ -19,12 +23,27 @@
 import Rating from './common/Rating'
 
 export default {
+  name: 'Skills',
   components: {Rating},
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    skills: {
+      type: Array,
+      required: true
+    }
+  },
   data () {
-    return {}
+    return {
+    }
   }
 }
 </script>
 
 <style>
+.skills-heading {
+  margin-bottom: 24px;
+}
 </style>

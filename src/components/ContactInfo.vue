@@ -7,10 +7,10 @@
             <v-layout row wrap>
               <v-flex id="text-column" xs12 md8>
                 <v-flex class="heading" xs12>
-                  <h1>{{ name }}</h1>
+                  <h1 class="display-2">{{ name }}</h1>
                 </v-flex>
                 <v-flex class="heading" xs12>
-                  <h2>{{ title }}</h2>
+                  <h2 class="headline">{{ title }}</h2>
                 </v-flex>
                 <v-flex xs8 sm6 md12 offset-xs2 offset-sm3 offset-md0>
                   <span v-for="(ci) in contactInfo" :key="ci.method">
@@ -81,7 +81,6 @@ a {
   width: 200px;
   height: 200px;
 }
-
 @media only screen and (max-width: 960px) {
   #text-column {
     order: 2;

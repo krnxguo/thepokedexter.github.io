@@ -5,8 +5,8 @@
         <v-card dark color="green">
           <v-container>
             <v-flex xs12>
-              <h2 class="heading">Skills</h2>
-              <rating></rating>
+              <h2 class="heading headline">Skills</h2>
+              <rating :rating="4" label="Javascript"></rating>
             </v-flex>
           </v-container>
         </v-card>

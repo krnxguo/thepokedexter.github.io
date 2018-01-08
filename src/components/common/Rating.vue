@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-layout row wrap>
-      <v-flex xs5>
+      <v-flex xs5 class="label">
         <span class="subheading">{{ label }}</span>
       </v-flex>
-      <v-flex xs7>
+      <v-flex xs7 class="rating">
         <span v-for="(i) in maxRating" :key="'filled'+i">
           <v-icon class="bubble">{{ i > rating ? 'fa-circle-o' : 'fa-circle' }}</v-icon>
         </span>
@@ -41,5 +41,13 @@ export default {
 .skill {
   margin-right: 6px;
   font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+  .rating {
+    text-align: right;
+  }
+  .label {
+    text-align: left;
+  }
 }
 </style>

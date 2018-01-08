@@ -7,7 +7,7 @@
             <v-flex xs12>
               <h2 class="heading headline skills-heading">Programming Langauges</h2>
               <v-layout row wrap>
-                <v-flex v-for="(skill) in skills" :key="skill.label" xs12 sm6 md4 rating>
+                <v-flex v-for="(skill) in skills" :key="skill.label" xs12 sm6 md4>
                   <rating :rating="skill.rating" :label="skill.label"></rating>
                 </v-flex>
               </v-layout>
@@ -43,10 +43,5 @@ export default {
 <style>
 .skills-heading {
   margin-bottom: 24px;
-}
-@media only screen and (max-width: 600px) {
-  .rating {
-    text-align: center;
-  }
 }
 </style>

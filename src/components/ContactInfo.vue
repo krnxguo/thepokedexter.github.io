@@ -81,7 +81,6 @@ a {
   width: 200px;
   height: 200px;
 }
-
 @media only screen and (max-width: 960px) {
   #text-column {
     order: 2;

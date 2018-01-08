@@ -5,8 +5,21 @@
         <v-card dark color="green">
           <v-container>
             <v-flex xs12>
-              <h2 class="heading headline">Skills</h2>
-              <rating :rating="4" label="Javascript"></rating>
+              <h2 class="heading headline skills-heading">Programming Langauges</h2>
+              <v-layout row wrap>
+                <v-flex xs12 sm6 md4 rating>
+                  <rating :rating="4" label="Javascript"></rating>
+                </v-flex>
+                <v-flex xs12 sm6 md4 rating>
+                  <rating :rating="4" label="Javascript"></rating>
+                </v-flex>
+                <v-flex xs12 sm6 md4 rating>
+                  <rating :rating="4" label="Javascript"></rating>
+                </v-flex>
+                <v-flex xs12 sm6 md4 rating>
+                  <rating :rating="4" label="Javascript"></rating>
+                </v-flex>
+              </v-layout>
             </v-flex>
           </v-container>
         </v-card>
@@ -27,4 +40,12 @@ export default {
 </script>
 
 <style>
+.skills-heading {
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 600px) {
+  .rating {
+    text-align: center;
+  }
+}
 </style>

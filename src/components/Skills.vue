@@ -33,7 +33,7 @@ export default {
         {label: 'HTML/CSS', rating: 5},
         {label: 'C#', rating: 3},
         {label: 'C++', rating: 3},
-        {label: 'Python', rating: 2},
+        {label: 'Python', rating: 2}
       ]
     }
   }

@@ -5,11 +5,9 @@
         <span class="subheading">{{ label }}</span>
       </v-flex>
       <v-flex xs7>
-        <v-icon class="bubble">fa-circle</v-icon>
-        <v-icon class="bubble">fa-circle</v-icon>
-        <v-icon class="bubble">fa-circle-o</v-icon>
-        <v-icon class="bubble">fa-circle-o</v-icon>
-        <v-icon class="bubble">fa-circle-o</v-icon>
+        <span v-for="(i) in maxRating" :key="'filled'+i">
+          <v-icon class="bubble">{{ i > rating ? 'fa-circle-o' : 'fa-circle' }}</v-icon>
+        </span>
       </v-flex>
     </v-layout>
   </div>
@@ -28,7 +26,9 @@ export default {
     }
   },
   data () {
-    return {}
+    return {
+      maxRating: 5
+    }
   }
 }
 </script>
@@ -36,6 +36,7 @@ export default {
 <style>
 .bubble {
   font-size: 14px;
+  margin-right: 4px;
 }
 .skill {
   margin-right: 6px;

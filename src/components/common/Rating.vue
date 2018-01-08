@@ -1,11 +1,17 @@
 <template>
   <div>
-    <span class="subheading skill">{{ label }}</span>
-    <v-icon class="bubble">fa-circle</v-icon>
-    <v-icon class="bubble">fa-circle</v-icon>
-    <v-icon class="bubble">fa-circle-o</v-icon>
-    <v-icon class="bubble">fa-circle-o</v-icon>
-    <v-icon class="bubble">fa-circle-o</v-icon>
+    <v-layout row wrap>
+      <v-flex xs5>
+        <span class="subheading">{{ label }}</span>
+      </v-flex>
+      <v-flex xs7>
+        <v-icon class="bubble">fa-circle</v-icon>
+        <v-icon class="bubble">fa-circle</v-icon>
+        <v-icon class="bubble">fa-circle-o</v-icon>
+        <v-icon class="bubble">fa-circle-o</v-icon>
+        <v-icon class="bubble">fa-circle-o</v-icon>
+      </v-flex>
+    </v-layout>
   </div>
 </template>
 
@@ -29,7 +35,7 @@ export default {
 
 <style>
 .bubble {
-  font-size: 16px;
+  font-size: 14px;
 }
 .skill {
   margin-right: 6px;

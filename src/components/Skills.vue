@@ -7,17 +7,8 @@
             <v-flex xs12>
               <h2 class="heading headline skills-heading">Programming Langauges</h2>
               <v-layout row wrap>
-                <v-flex xs12 sm6 md4 rating>
-                  <rating :rating="4" label="Javascript"></rating>
-                </v-flex>
-                <v-flex xs12 sm6 md4 rating>
-                  <rating :rating="4" label="Javascript"></rating>
-                </v-flex>
-                <v-flex xs12 sm6 md4 rating>
-                  <rating :rating="4" label="Javascript"></rating>
-                </v-flex>
-                <v-flex xs12 sm6 md4 rating>
-                  <rating :rating="4" label="Javascript"></rating>
+                <v-flex v-for="(skill) in skills" :key="skill.label" xs12 sm6 md4 rating>
+                  <rating :rating="skill.rating" :label="skill.label"></rating>
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -32,9 +23,19 @@
 import Rating from './common/Rating'
 
 export default {
+  name: 'Skills',
   components: {Rating},
   data () {
-    return {}
+    return {
+      skills: [
+        {label: 'Javascript', rating: 5},
+        {label: 'Typescript', rating: 5},
+        {label: 'HTML/CSS', rating: 5},
+        {label: 'C#', rating: 3},
+        {label: 'C++', rating: 3},
+        {label: 'Python', rating: 2},
+      ]
+    }
   }
 }
 </script>

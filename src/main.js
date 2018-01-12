@@ -8,6 +8,7 @@ import 'vuetify/dist/vuetify.css'
 import App from './App'
 
 import './styles.css'
+import 'font-awesome/css/font-awesome.min.css'
 
 Vue.use(Vuetify)
 

@@ -28,7 +28,7 @@
                   <v-layout id="social-media-icons" row wrap>
                     <v-flex v-for="(sm) in socialMedia" :key="sm.icon">
                       <a v-bind:href="sm.url" target="_blank">
-                        <v-icon>{{ sm.icon }}</v-icon>
+                        <v-icon class="social-media-icon">{{ sm.icon }}</v-icon>
                         {{ sm.label }}
                       </a>
                     </v-flex>
@@ -80,6 +80,9 @@ a {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+}
+.social-media-icon {
+  font-size: 24px;
 }
 @media only screen and (max-width: 960px) {
   #text-column {

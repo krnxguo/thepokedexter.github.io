@@ -1,5 +1,6 @@
 <template>
   <v-app id="v-app">
+    <navigation></navigation>
     <v-container grid-list-xl>
       <contact-info/>
       <introduction/>

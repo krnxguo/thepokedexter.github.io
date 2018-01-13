@@ -1,9 +1,16 @@
 <template>
   <div id="navigation">
     <v-layout>
-      <v-navigation-drawer>
-        This is a nav drawer
-      </v-navigation-drawer>
+      <v-tabs v-model="active">
+        <v-tabs-bar class="cyan">
+          <v-tabs-item>
+            Tab1
+          </v-tabs-item>
+          <v-tabs-item>
+            Tab2
+          </v-tabs-item>
+        </v-tabs-bar>
+      </v-tabs>
     </v-layout>
   </div>
 </template>

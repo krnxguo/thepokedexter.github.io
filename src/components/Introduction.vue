@@ -9,8 +9,7 @@
             </v-flex>
             <v-flex xs12>
               <p>
-                Full stack developer with professional experience in modern web frameworks. 
-                Lifelong learner who values clean code, best practises, and effective team communication.
+                {{ blurb }}
               </p>
             </v-flex>
             <hr/>
@@ -27,9 +26,13 @@
 </template>
 
 <script>
+import data from '../assets/data/introduction'
+
 export default {
   data () {
-    return {}
+    return {
+      blurb: data.blurb
+    }
   }
 }
 </script>

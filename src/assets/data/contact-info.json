@@ -8,7 +8,7 @@
     {"method": "Email", "contact": "krn.x.guo@gmail.com"}
   ],
   "socialMedia": [
-    {"icon": "fa-github", "url": "https://github.com/ThePokedexter", "label": "ThePokedexter"},
-    {"icon": "fa-linkedin-square", "url": "https://linkedin.com/in/kxguo", "label": "kxguo"}
+    {"icon": "fa-github", "url": "https://github.com/ThePokedexter", "label": "Github"},
+    {"icon": "fa-linkedin-square", "url": "https://linkedin.com/in/kxguo", "label": "LinkedIn"}
   ]
 }

@@ -26,10 +26,10 @@
                 </v-flex>
                 <v-flex xs10 sm8 md12 offset-xs1 offset-sm2 offset-md0>
                   <v-layout id="social-media-icons" row wrap>
-                    <v-flex v-for="(sm) in socialMedia" :key="sm.icon">
+                    <v-flex md6 v-for="(sm) in socialMedia" :key="sm.icon">
                       <a v-bind:href="sm.url" target="_blank">
                         <v-icon class="social-media-icon">{{ sm.icon }}</v-icon>
-                        {{ sm.label }}
+                        <span class="social-media-label">{{ sm.label }}</span>
                       </a>
                     </v-flex>
                   </v-layout>
@@ -75,6 +75,11 @@ a {
 }
 .social-media-icon {
   font-size: 24px;
+}
+.social-media-label {
+  margin-left: 6px;
+  top: 6px;
+  position: relative;
 }
 @media only screen and (max-width: 960px) {
   #text-column {

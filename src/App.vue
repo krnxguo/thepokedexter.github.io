@@ -50,7 +50,7 @@ export default {
 
 <style>
 #v-app {
-  background-image: url('./assets/gplaypattern.png');
+  background-image: url('./assets/background-pattern.png');
   background-attachment: fixed;
 }
 </style>

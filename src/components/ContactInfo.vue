@@ -49,24 +49,16 @@
 </template>
 
 <script>
+import data from '../assets/data/contact-info.json'
+
 export default {
   name: 'ContactInfo',
   data () {
     return {
-      name: 'Karen Guo',
-      title: 'Full Stack Software Developer',
-      location: 'Vancouver, BC',
-      phone: '778.858.8070',
-      email: 'krn.x.guo@gmail.com',
-      contactInfo: [
-        {method: 'Location', contact: 'Vancouver, BC'},
-        {method: 'Phone', contact: '778.858.8070'},
-        {method: 'Email', contact: 'krn.x.guo@gmail.com'}
-      ],
-      socialMedia: [
-        {icon: 'fa-github', url: 'https://github.com/ThePokedexter', label: 'ThePokedexter'},
-        {icon: 'fa-linkedin-square', url: 'https://linkedin.com/in/kxguo', label: 'kxguo'}
-      ]
+      name: `${data.firstName} ${data.lastName}`,
+      title: data.title,
+      contactInfo: data.contactInfo,
+      socialMedia: data.socialMedia
     }
   }
 }

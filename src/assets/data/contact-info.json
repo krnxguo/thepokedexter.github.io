@@ -5,7 +5,7 @@
   "contactInfo": [
     {"method": "Location", "contact": "Vancouver, BC"},
     {"method": "Phone", "contact": "778.858.8070"},
-    {"method": "Email", "contact": "krn.x.guo@gmail.com"}
+    {"method": "Email", "contact": "krn.x.guo@gmail.com", "url": "mailto:krn.x.guo@gmail.com"}
   ],
   "socialMedia": [
     {"icon": "fa-github", "url": "https://github.com/ThePokedexter", "label": "Github"},

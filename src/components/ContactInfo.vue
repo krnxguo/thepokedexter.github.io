@@ -19,7 +19,8 @@
                         <strong>{{ ci.method }}</strong>
                       </v-flex>
                       <v-flex class="contact" xs8 md6>
-                        {{ ci.contact }}
+                        <a v-if="ci.url" :href="ci.url">{{ ci.contact }}</a>
+                        <span v-else>{{ ci.contact }}</span>
                       </v-flex>
                     </v-layout>
                   </span>

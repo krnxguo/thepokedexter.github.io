@@ -17,6 +17,7 @@
 import ContactInfo from './components/ContactInfo'
 import Introduction from './components/Introduction'
 import Skills from './components/Skills'
+import Navigation from './components/Navigation'
 
 import skills from './assets/data/skills'
 
@@ -24,7 +25,8 @@ export default {
   components: {
     ContactInfo,
     Introduction,
-    Skills
+    Skills,
+    Navigation
   },
   data () {
     return {

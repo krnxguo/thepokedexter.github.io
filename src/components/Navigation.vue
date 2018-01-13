@@ -1,8 +1,8 @@
 <template>
   <div id="navigation">
     <v-layout>
-      <v-tabs v-model="active">
-        <v-tabs-bar class="cyan">
+      <v-tabs id="tabs" class="elevation-3">
+        <v-tabs-bar class="cyan" dark>
           <v-tabs-item>
             Tab1
           </v-tabs-item>
@@ -22,3 +22,10 @@ export default {
   }
 }
 </script>
+
+<style>
+#tabs {
+  position: fixed;
+  z-index: 3;
+}
+</style>

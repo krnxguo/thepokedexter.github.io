@@ -3,14 +3,12 @@
     <v-container grid-list-xl>
       <contact-info/>
       <introduction/>
-      <skills
-        title="Programming Languages"
-        :skills="programmingLanguages"
-      />
-      <skills
-        title="Frameworks"
-        :skills="frameworks"
-      />
+      <span v-for="skill in skills" :key="skill.skillType">
+        <skills
+          :title="skill.skillType"
+          :skills="skill.skills"
+        />
+      </span>
     </v-container>
   </v-app>
 </template>
@@ -20,6 +18,8 @@ import ContactInfo from './components/ContactInfo'
 import Introduction from './components/Introduction'
 import Skills from './components/Skills'
 
+import data from './assets/data/skills'
+
 export default {
   components: {
     ContactInfo,
@@ -28,6 +28,7 @@ export default {
   },
   data () {
     return {
+      skills: data,
       programmingLanguages: [
         {label: 'Javascript', rating: 5},
         {label: 'Typescript', rating: 5},

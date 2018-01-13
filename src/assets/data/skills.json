@@ -1,0 +1,22 @@
+[
+  {
+    "skillType": "Programming Languages",
+    "skills": [
+      {"label": "Javascript", "rating": 5},
+      {"label": "Typescript", "rating": 5},
+      {"label": "HTML/CSS", "rating": 5},
+      {"label": "C#", "rating": 3},
+      {"label": "C++", "rating": 3},
+      {"label": "Python", "rating": 2}
+    ]
+  }, {
+    "skillType": "Frameworks",
+    "skills": [
+      {"label": "React", "rating": 5},
+      {"label": "Angular", "rating": 5},
+      {"label": "Node.js", "rating": 4},
+      {"label": ".NET Core", "rating": 3},
+      {"label": "Vue.js", "rating": 3}
+    ]
+  }
+]

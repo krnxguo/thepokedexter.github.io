@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import data from '../assets/data/introduction.json'
+import data from '../assets/data/introduction'
 
 export default {
   data () {

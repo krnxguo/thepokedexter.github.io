@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import data from '../assets/data/contact-info.json'
+import data from '../assets/data/contact-info'
 
 export default {
   name: 'ContactInfo',

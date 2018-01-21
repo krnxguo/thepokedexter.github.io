@@ -2,9 +2,9 @@
   <v-app id="v-app">
     <navigation></navigation>
     <v-container grid-list-xl>
-      <a name="contact-info"><contact-info id="first-section"/></a>
-      <a name="introduction"><introduction/></a>
-      <span v-for="skill in skills" :key="skill.skillType">
+      <contact-info id="contact-info"/>
+      <introduction id="introduction"/>
+      <span id="skills" v-for="skill in skills" :key="skill.skillType">
         <skills
           :title="skill.skillType"
           :skills="skill.skills"
@@ -42,7 +42,7 @@ export default {
   background-image: url('./assets/background-pattern.png');
   background-attachment: fixed;
 }
-#first-section {
+#contact-info {
   margin-top: 96px;
 }
 </style>

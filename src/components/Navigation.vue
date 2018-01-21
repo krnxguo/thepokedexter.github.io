@@ -1,14 +1,17 @@
 <template>
   <div id="navigation">
     <v-layout>
-      <v-tabs id="tabs" class="elevation-3">
+      <v-tabs id="tabs" class="elevation-3" v-model="active">
         <v-tabs-bar class="cyan" dark>
-          <v-tabs-item>
-            Tab1
+          <v-tabs-item
+            v-for="tab in tabs"
+            :key="tab"
+            :href="'#' + tab"
+            ripple
+          >
+            {{ tab }}
           </v-tabs-item>
-          <v-tabs-item>
-            Tab2
-          </v-tabs-item>
+          <v-tabs-slider color="yellow"></v-tabs-slider>
         </v-tabs-bar>
       </v-tabs>
     </v-layout>
@@ -18,7 +21,14 @@
 <script>
 export default {
   data () {
-    return {}
+    return {
+      tabs: [
+        'Contact Info',
+        'Introduction',
+        'Skills'
+      ],
+      active: null
+    }
   }
 }
 </script>

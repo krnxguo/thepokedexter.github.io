@@ -2,7 +2,7 @@
   <v-app id="v-app">
     <navigation></navigation>
     <v-container grid-list-xl>
-      <contact-info id="first-section"/>
+      <a name="Contact Info"><contact-info id="first-section"/></a>
       <introduction/>
       <span v-for="skill in skills" :key="skill.skillType">
         <skills

@@ -16,7 +16,7 @@
             <v-layout row justify-center>
               <v-card-actions id="action-button-row">
                 <!-- TODO: Allow user to download PDF of resume -->
-                <v-btn large color="success" :disabled="true">Download Resume</v-btn>
+                <v-btn large color="success">Download Resume</v-btn>
               </v-card-actions>
             </v-layout>
           </v-container>

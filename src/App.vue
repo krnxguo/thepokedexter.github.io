@@ -2,8 +2,8 @@
   <v-app id="v-app">
     <navigation></navigation>
     <v-container grid-list-xl>
-      <a name="Contact Info"><contact-info id="first-section"/></a>
-      <introduction/>
+      <a name="contact-info"><contact-info id="first-section"/></a>
+      <a name="introduction"><introduction/></a>
       <span v-for="skill in skills" :key="skill.skillType">
         <skills
           :title="skill.skillType"

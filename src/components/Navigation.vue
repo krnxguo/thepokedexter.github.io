@@ -5,11 +5,11 @@
         <v-tabs-bar class="cyan" dark>
           <v-tabs-item
             v-for="tab in tabs"
-            :key="tab"
-            :href="'#' + tab"
+            :key="tab.anchor"
+            :href="'#' + tab.anchor"
             ripple
           >
-            {{ tab }}
+            {{ tab.label }}
           </v-tabs-item>
           <v-tabs-slider color="yellow"></v-tabs-slider>
         </v-tabs-bar>
@@ -23,9 +23,9 @@ export default {
   data () {
     return {
       tabs: [
-        'Contact Info',
-        'Introduction',
-        'Skills'
+        {label: 'Contact Info', anchor: 'contact-info'},
+        {label: 'Introduction', anchor: 'introduction'},
+        {label: 'Skills', anchor: 'skills'}
       ],
       active: null
     }

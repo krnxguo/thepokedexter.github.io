@@ -3,9 +3,14 @@
     <v-layout>
       <v-toolbar class="cyan" dark dense fixed>
         <v-toolbar-items>
-          <v-btn flat>Link One</v-btn>
-          <v-btn flat>Link Two</v-btn>
-          <v-btn flat>Link Three</v-btn>
+          <v-btn
+            v-for="tab in tabs"
+            :key="tab.anchor"
+            flat
+            :target="'#' + tab.anchor"
+          >
+            {{ tab.label }}
+          </v-btn>
         </v-toolbar-items>
       </v-toolbar>
     </v-layout>

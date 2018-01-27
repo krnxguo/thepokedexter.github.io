@@ -8,6 +8,7 @@
             v-for="tab in tabs"
             :key="tab.anchor"
             :href="'#' + tab.anchor"
+            ripple
           >
             {{ tab.label }}
           </v-tabs-item>

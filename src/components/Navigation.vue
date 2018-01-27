@@ -1,19 +1,13 @@
 <template>
   <div id="navigation">
     <v-layout>
-      <v-tabs id="tabs" class="elevation-3">
-        <v-tabs-bar class="cyan" dark>
-          <v-tabs-item
-            class="tab-item"
-            v-for="tab in tabs"
-            :key="tab.anchor"
-            :href="'#' + tab.anchor"
-            ripple
-          >
-            {{ tab.label }}
-          </v-tabs-item>
-        </v-tabs-bar>
-      </v-tabs>
+      <v-toolbar class="cyan" dark dense fixed>
+        <v-toolbar-items>
+          <v-btn flat>Link One</v-btn>
+          <v-btn flat>Link Two</v-btn>
+          <v-btn flat>Link Three</v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
     </v-layout>
   </div>
 </template>
@@ -34,11 +28,4 @@ export default {
 </script>
 
 <style>
-#tabs {
-  position: fixed;
-  z-index: 3;
-}
-.tab-item > a {
-  opacity: 1;
-}
 </style>

@@ -5,7 +5,7 @@
         <v-card>
           <v-container>
             <v-flex xs12>
-              <h2 class="headline">Introduction</h2>
+              <h2 class="headline">{{ title }}</h2>
             </v-flex>
             <v-flex xs12>
               <p>
@@ -32,7 +32,8 @@ import data from '../assets/data/introduction'
 export default {
   data () {
     return {
-      blurb: data.blurb
+      blurb: data.blurb,
+      title: data.title
     }
   }
 }

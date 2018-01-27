@@ -1,17 +1,16 @@
 <template>
   <div id="navigation">
     <v-layout>
-      <v-tabs id="tabs" class="elevation-3" v-model="active">
+      <v-tabs id="tabs" class="elevation-3">
         <v-tabs-bar class="cyan" dark>
           <v-tabs-item
+            class="tab-item"
             v-for="tab in tabs"
             :key="tab.anchor"
             :href="'#' + tab.anchor"
-            ripple
           >
             {{ tab.label }}
           </v-tabs-item>
-          <v-tabs-slider color="yellow"></v-tabs-slider>
         </v-tabs-bar>
       </v-tabs>
     </v-layout>
@@ -37,5 +36,8 @@ export default {
 #tabs {
   position: fixed;
   z-index: 3;
+}
+.tab-item > a {
+  opacity: 1;
 }
 </style>

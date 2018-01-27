@@ -15,8 +15,8 @@
             <hr/>
             <v-layout row justify-center>
               <v-card-actions id="action-button-row">
-                <!-- TODO: Allow user to download PDF of resume -->
-                <v-btn large color="success" :disabled="true">Download Resume</v-btn>
+                <!-- TODO: Add link to Google Docs resume -->
+                <v-btn large color="primary">View Resume</v-btn>
               </v-card-actions>
             </v-layout>
           </v-container>

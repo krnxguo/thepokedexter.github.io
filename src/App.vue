@@ -1,9 +1,10 @@
 <template>
   <v-app id="v-app">
+    <navigation></navigation>
     <v-container grid-list-xl>
-      <contact-info/>
-      <introduction/>
-      <span v-for="skill in skills" :key="skill.skillType">
+      <contact-info id="contact-info"/>
+      <introduction id="introduction"/>
+      <span id="skills" v-for="skill in skills" :key="skill.skillType">
         <skills
           :title="skill.skillType"
           :skills="skill.skills"
@@ -17,6 +18,7 @@
 import ContactInfo from './components/ContactInfo'
 import Introduction from './components/Introduction'
 import Skills from './components/Skills'
+import Navigation from './components/Navigation'
 
 import skills from './assets/data/skills'
 
@@ -24,7 +26,8 @@ export default {
   components: {
     ContactInfo,
     Introduction,
-    Skills
+    Skills,
+    Navigation
   },
   data () {
     return {
@@ -38,5 +41,8 @@ export default {
 #v-app {
   background-image: url('./assets/background-pattern.png');
   background-attachment: fixed;
+}
+#contact-info {
+  margin-top: 96px;
 }
 </style>

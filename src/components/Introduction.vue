@@ -5,7 +5,7 @@
         <v-card>
           <v-container>
             <v-flex xs12>
-              <h2 class="headline">{{ title }}</h2>
+              <h5 class="headline">{{ title }}</h5>
             </v-flex>
             <v-flex xs12>
               <p>

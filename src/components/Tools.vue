@@ -5,11 +5,17 @@
         <v-card dark color="purple">
           <v-container>
             <v-flex xs12>
-              <h2 class="headline tools-heading">{{ title }}</h2>
-              <v-layout row wrap>
-                <v-flex v-for="(tool) in tools" :key="tool.label" xs12 sm6 md4>
+              <h5 class="headline tools-heading">{{ title }}</h5>
+              <v-layout v-for="(toolSection) in tools" :key="toolSection.toolType" row wrap>
+                <v-flex xs4>
+                  <span class="subheading">{{ toolSection.toolType }}</span>
                 </v-flex>
-              </v-layout>
+                <v-flex class="tools" xs8>
+                  <span class="subheading" v-for="(tool, index) in toolSection.tools" :key="tool.label">
+                    {{ index === toolSection.tools.length - 1 ? tool.label : tool.label + ','}}
+                  </span>
+                </v-flex>
+              </v-layout>              
             </v-flex>
           </v-container>
         </v-card>
@@ -35,5 +41,10 @@ export default {
 <style>
 .tools-heading {
   margin-bottom: 24px;
+}
+@media only screen and (min-width: 600px) {
+  .tools {
+    text-align: right;
+  }
 }
 </style>

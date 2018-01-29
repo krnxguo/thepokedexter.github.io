@@ -1,11 +1,27 @@
 {
   "title": "Development Tools",
   "tools": [
-    {"label": "Git"},
-    {"label": "Jira"},
-    {"label": "npm"},
-    {"label": "Webstorm"},
-    {"label": "VS Code"},
-    {"label": "Visual Studio"}
+    {
+      "toolType": "IDE/Text Editors",
+      "tools": [
+        {"label": "Webstorm"},
+        {"label": "VS Code"},
+        {"label": "Visual Studio"}
+      ]
+    }, {
+      "toolType": "Version Control",
+      "tools": [
+        {"label": "Git"},
+        {"label": "CVS"},
+        {"label": "Subversion"}
+      ]
+    }, {
+      "toolType": "Operating Systems",
+      "tools": [
+        {"label": "Linux"},
+        {"label": "MacOS"},
+        {"label": "Windows"}
+      ]
+    }
   ]
 }

@@ -5,7 +5,7 @@
         <v-card dark color="green">
           <v-container>
             <v-flex xs12>
-              <h2 class="headline skills-heading">{{ title }}</h2>
+              <h5 class="headline skills-heading">{{ title }}</h5>
               <v-layout row wrap>
                 <v-flex v-for="(skill) in skills" :key="skill.label" xs12 sm6 md4>
                   <rating :rating="skill.rating" :label="skill.label"></rating>

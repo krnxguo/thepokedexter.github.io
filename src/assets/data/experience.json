@@ -1,1 +1,39 @@
-{}
+{
+  "title": "Work Experience",
+  "experience": [{
+    "employer": "Tuangru",
+    "startDate": "May 2016",
+    "endDate": "February 2018",
+    "position": "Software Developer",
+    "projects": [{
+      "projectName": "E-Commerce Platform",
+      "bulletPoints": [],
+      "skills": []
+    }, {
+      "projectName": "Data Center Infrastructure Management Software",
+      "bulletPoints": [],
+      "skills": []
+    }]
+  }, {
+    "employer": "MS/MRI Research Group",
+    "startDate": "January 2015",
+    "endDate": "August 2015",
+    "position": "Co-op C++ Developer",
+    "bulletPoints": [
+      "Designed and implemented a C++ program to manipulate MRIs for analysis",
+      "Improved the accuracy of a pre-existing in-house MRI analysis tool",
+      "Migrated software programs from Debian 3/5 to Debian 7",
+      "Wrote and edited technical specification documents"
+    ]
+  }, {
+    "employer": "Adams Lab",
+    "startDate": "January 2014",
+    "endDate": "August 2014",
+    "position": "Bioinformatics Research Assistant"
+  }, {
+    "employer": "UBC, Computer Science Department",
+    "startDate": "January 2015",
+    "endDate": "September 2015",
+    "position": "Undergraduate Teaching Assistant, CPSC 301"
+  }]
+}

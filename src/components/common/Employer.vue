@@ -1,8 +1,7 @@
 <template>
-  <div id="experience">
+  <div id="employer">
     <v-layout>
       <v-flex xs12 sm10 lg8 offset-xs0 offset-sm1 offset-lg2>
-        <h3 id="title" class="display-2">{{ title }}</h3>
         <v-card>
           <v-toolbar class="blue" dark flat>
             <v-toolbar-title>MS/MRI Lab</v-toolbar-title>
@@ -17,23 +16,18 @@
 </template>
 
 <script>
-import data from '../assets/data/experience'
-
 export default {
-  data () {
-    return {
-      experience: data.experience,
-      title: data.title
+  props: {
+    employer: {
+      type: String,
+      required: true
     }
+  },
+  data() {
+    return {}
   }
 }
 </script>
 
 <style>
-#title {
-  text-align: center;
-  color: #494949;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
 </style>

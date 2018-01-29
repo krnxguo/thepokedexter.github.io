@@ -3,14 +3,12 @@
     <v-layout>
       <v-flex xs12 sm10 lg8 offset-xs0 offset-sm1 offset-lg2>
         <h3 id="title" class="display-2">{{ title }}</h3>
-        <v-card>
-          <v-toolbar class="blue" dark flat>
-            <v-toolbar-title>MS/MRI Lab</v-toolbar-title>
-          </v-toolbar>
-          <v-container>
-            MY WORK MY WORK MY WORK
-          </v-container>
-        </v-card>
+        <job 
+          employer="MS/MRI"
+          startDate="January 2015"
+          endDate="August 2015"
+          position="Co-op C++ Developer"
+        ></job>
       </v-flex>
     </v-layout>
   </div>
@@ -18,8 +16,10 @@
 
 <script>
 import data from '../assets/data/experience'
+import Job from './common/Job'
 
 export default {
+  components: { Job },
   data () {
     return {
       experience: data.experience,

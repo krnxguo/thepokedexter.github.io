@@ -6,13 +6,44 @@
     "endDate": "February 2018",
     "position": "Software Developer",
     "projects": [{
-      "projectName": "E-Commerce Platform",
-      "bulletPoints": [],
-      "skills": []
-    }, {
       "projectName": "Data Center Infrastructure Management Software",
-      "bulletPoints": [],
-      "skills": []
+      "bulletPoints": [
+        "Communicated effectively with technical lead and product manager in an agile environment to ensure tasks are assigned appropriately and delivered on schedule",
+        "Spearheaded frontend development of greenfield project by researching best practises for modern web applications and setting up initial configurations for Angular, Webpack, Redux and Karma"
+      ],
+      "skills": [
+        "TypeScript",
+        "C#",
+        ".NET Core",
+        "HTML",
+        "Sass/CSS",
+        "Karma",
+        "Jasmine",
+        "Redux",
+        "Webpack",
+        "XUnit",
+        "Git"
+      ]
+    }, {
+      "projectName": "E-Commerce Platform",
+      "bulletPoints": [
+        "Build a responsive single-page web application using React with ECMAScript 6 from the ground up based on mockups",
+        "Designed and implemented RESTful API endpoints in Node.js to store and retrieve data from PostgreSQL database using an ORM",
+        "Integrated third-party payment processor's API into checkout workflow",
+        "Created and maintained consistent reusable Sass/CSS styles"
+      ],
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Sass/CSS",
+        "Redux",
+        "Webpack",
+        "Jest",
+        "Bootstrap",
+        "Git"
+      ]
     }]
   }, {
     "employer": "MS/MRI Research Group",
@@ -24,16 +55,36 @@
       "Improved the accuracy of a pre-existing in-house MRI analysis tool",
       "Migrated software programs from Debian 3/5 to Debian 7",
       "Wrote and edited technical specification documents"
+    ],
+    "skills": [
+      "C++",
+      "CVS"
     ]
   }, {
     "employer": "Adams Lab",
     "startDate": "January 2014",
     "endDate": "August 2014",
-    "position": "Bioinformatics Research Assistant"
+    "position": "Bioinformatics Research Assistant",
+    "bulletPoints": [
+      "Wrote Python scripts in an Linux environment to study the evolution of a small flowering plant; findings are published in Plant Physiology",
+      "Summarized research findings in a formal report and presented conclusions to a group of six researchers"
+    ],
+    "skills": [
+      "Python"
+    ],
+    "publications": []
   }, {
     "employer": "UBC, Computer Science Department",
     "startDate": "January 2015",
     "endDate": "September 2015",
-    "position": "Undergraduate Teaching Assistant, CPSC 301"
+    "position": "Undergraduate Teaching Assistant, CPSC 301",
+    "bulletPoints": [
+      "Facilitated student learning by explaining core computer science concepts and leading demos during weekly labs",
+      "Engaged struggling students online and during weekly office hours",
+      "Rigorously evaluated answers to open-ended programming questions on midterm and final exams to ensure fair and consistent grading"
+    ],
+    "skills": [
+      "Python"
+    ]
   }]
 }

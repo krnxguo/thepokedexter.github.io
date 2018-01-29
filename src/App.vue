@@ -10,6 +10,7 @@
           :skills="skill.skills"
         />
       </span>
+      <tools id="tools"/>
     </v-container>
   </v-app>
 </template>
@@ -19,6 +20,7 @@ import ContactInfo from './components/ContactInfo'
 import Introduction from './components/Introduction'
 import Skills from './components/Skills'
 import Navigation from './components/Navigation'
+import Tools from './components/Tools'
 
 import skills from './assets/data/skills'
 
@@ -27,7 +29,8 @@ export default {
     ContactInfo,
     Introduction,
     Skills,
-    Navigation
+    Navigation,
+    Tools
   },
   data () {
     return {

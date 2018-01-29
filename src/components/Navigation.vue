@@ -24,7 +24,8 @@ export default {
       tabs: [
         {label: 'Contact Info', anchor: 'contact-info'},
         {label: 'Introduction', anchor: 'introduction'},
-        {label: 'Skills', anchor: 'skills'}
+        {label: 'Skills', anchor: 'skills'},
+        {label: 'Tools', anchor: 'tools'}
       ],
       active: null
     }

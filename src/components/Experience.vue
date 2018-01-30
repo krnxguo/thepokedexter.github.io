@@ -3,11 +3,12 @@
     <v-layout>
       <v-flex xs12 sm10 lg8 offset-xs0 offset-sm1 offset-lg2>
         <h3 id="title" class="display-2">{{ title }}</h3>
-        <job 
-          employer="MS/MRI"
-          startDate="January 2015"
-          endDate="August 2015"
-          position="Co-op C++ Developer"
+        <job
+          v-for="(job) in experience" :key="job.employer + job.startDate"
+          :employer="job.employer"
+          :startDate="job.startDate"
+          :endDate="job.endDate"
+          :position="job.position"
         ></job>
       </v-flex>
     </v-layout>

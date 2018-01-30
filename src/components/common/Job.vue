@@ -1,13 +1,17 @@
 <template>
   <v-card>
-    <v-toolbar class="blue" dark flat extended>
+    <v-toolbar class="light-blue" dark flat>
       <v-toolbar-title>{{ employer }}</v-toolbar-title>
-      <v-toolbar-title slot="extension">{{ position }}</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-title>{{ startDate + " - " + endDate}}</v-toolbar-title>
     </v-toolbar>
     <v-container>
-      MY WORK MY WORK MY WORK
+      <h5 class="headline position">{{ position }}</h5>
+      <ul>
+        <li>
+          <span class="subheading">Designed and implemented a C++ program to manipulate MRIs for analysis</span>            
+        </li>
+      </ul>
     </v-container>
   </v-card>
 </template>
@@ -39,4 +43,13 @@ export default {
 </script>
 
 <style>
+ul {
+  padding-left: 20px;
+}
+li {
+  margin: 0 0 0.5em;
+}
+.position {
+  margin-bottom: 20px;
+}
 </style>

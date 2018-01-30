@@ -3,7 +3,7 @@
   "experience": [{
     "employer": "Tuangru",
     "startDate": "May 2016",
-    "endDate": "February 2018",
+    "endDate": "Feb 2018",
     "position": "Software Developer",
     "projects": [{
       "projectName": "Data Center Infrastructure Management Software",
@@ -47,8 +47,8 @@
     }]
   }, {
     "employer": "MS/MRI Research Group",
-    "startDate": "January 2015",
-    "endDate": "August 2015",
+    "startDate": "Jan 2015",
+    "endDate": "Aug 2015",
     "position": "Co-op C++ Developer",
     "bulletPoints": [
       "Designed and implemented a C++ program to manipulate MRIs for analysis",
@@ -62,8 +62,8 @@
     ]
   }, {
     "employer": "Adams Lab",
-    "startDate": "January 2014",
-    "endDate": "August 2014",
+    "startDate": "Jan 2014",
+    "endDate": "Aug 2014",
     "position": "Bioinformatics Research Assistant",
     "bulletPoints": [
       "Wrote Python scripts in an Linux environment to study the evolution of a small flowering plant; findings are published in Plant Physiology",
@@ -74,9 +74,9 @@
     ],
     "publications": []
   }, {
-    "employer": "UBC, Computer Science Department",
-    "startDate": "January 2015",
-    "endDate": "September 2015",
+    "employer": "UBC Department of Computer Science",
+    "startDate": "Jan 2015",
+    "endDate": "Sept 2015",
     "position": "Undergraduate Teaching Assistant, CPSC 301",
     "bulletPoints": [
       "Facilitated student learning by explaining core computer science concepts and leading demos during weekly labs",

@@ -12,7 +12,7 @@
             <h5 class="headline position">{{ position }}</h5>
             <ul>
               <li v-for="(bulletPoint, index) in bulletPoints" :key="index">
-                <span class="subheading">{{ bulletPoint }}</span>            
+                <span class="body-1">{{ bulletPoint }}</span>            
               </li>
             </ul>
           </v-container>

@@ -11,8 +11,8 @@
           <v-container>
             <h5 class="headline position">{{ position }}</h5>
             <ul>
-              <li>
-                <span class="subheading">Designed and implemented a C++ program to manipulate MRIs for analysis</span>            
+              <li v-for="(bulletPoint, index) in bulletPoints" :key="index">
+                <span class="subheading">{{ bulletPoint }}</span>            
               </li>
             </ul>
           </v-container>
@@ -40,6 +40,12 @@ export default {
     position: {
       type: String,
       required: true
+    },
+    bulletPoints: {
+      type: Array,
+      default: function () {
+        return []
+      }
     }
   },
   data () {
@@ -56,6 +62,7 @@ li {
   margin: 0 0 0.5em;
 }
 .position {
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 </style>

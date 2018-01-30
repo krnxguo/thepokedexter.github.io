@@ -11,6 +11,7 @@
       :startDate="job.startDate"
       :endDate="job.endDate"
       :position="job.position"
+      :bulletPoints="job.bulletPoints"
     ></job>
   </div>
 </template>

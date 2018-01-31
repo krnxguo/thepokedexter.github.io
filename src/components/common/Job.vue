@@ -21,9 +21,7 @@
               :key="project.projectName" 
             >
               <h6 class="title project-name">{{ project.projectName }}</h6>
-              <ul 
-                v-if="project.bulletPoints.length > 0"
-              >
+              <ul v-if="project.bulletPoints.length > 0">
                 <li 
                   v-for="(projectBulletPoint, index) in project.bulletPoints" 
                   :key="project.projectName + index"

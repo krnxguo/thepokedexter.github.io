@@ -16,7 +16,7 @@
             <v-layout row justify-center>
               <v-card-actions id="action-button-row">
                 <!-- TODO: Add link to Google Docs resume -->
-                <v-btn large color="primary">View Resume</v-btn>
+                <v-btn large color="primary">View PDF Resume</v-btn>
               </v-card-actions>
             </v-layout>
           </v-container>

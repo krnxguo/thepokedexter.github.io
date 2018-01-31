@@ -1,0 +1,107 @@
+<template>
+  <div id="job">
+    <v-layout>
+      <v-flex xs12 sm10 lg8 offset-xs0 offset-sm1 offset-lg2>
+        <v-card>
+          <v-toolbar class="light-blue" dark flat>
+            <v-toolbar-title>{{ employer }}</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-toolbar-title>{{ startDate + " - " + endDate}}</v-toolbar-title>
+          </v-toolbar>
+          <v-container>
+            <h5 class="headline position">{{ position }}</h5>
+            <ul v-if="bulletPoints.length > 0">
+              <li v-for="(bulletPoint, index) in bulletPoints" :key="position + index">
+                <span class="body-1">{{ bulletPoint }}</span>            
+              </li>
+            </ul>
+            <span 
+              v-if="projects.length > 0"
+              v-for="(project) in projects" 
+              :key="project.projectName" 
+            >
+              <h6 class="title project-name">{{ project.projectName }}</h6>
+              <ul v-if="project.bulletPoints.length > 0">
+                <li 
+                  v-for="(projectBulletPoint, index) in project.bulletPoints" 
+                  :key="project.projectName + index"
+                >
+                  <span class="body-1">{{ projectBulletPoint }}</span>            
+                </li>
+              </ul>
+            </span>
+            <span v-if="skills.length > 0">
+              <hr/>
+              <h6 class="title technologies-used">Technologies Used</h6>
+              <v-chip v-for="(skill) in skills" :key="skill">
+                <strong>{{ skill }}</strong>
+              </v-chip>
+            </span>
+          </v-container>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    employer: {
+      type: String,
+      required: true
+    },
+    startDate: {
+      type: String,
+      required: true
+    },
+    endDate: {
+      type: String,
+      required: true
+    },
+    position: {
+      type: String,
+      required: true
+    },
+    bulletPoints: {
+      type: Array,
+      default: function () {
+        return []
+      }
+    },
+    projects: {
+      type: Array,
+      default: function () {
+        return []
+      }
+    },
+    skills: {
+      type: Array,
+      default: function () {
+        return []
+      }
+    }
+  },
+  data () {
+    return {}
+  }
+}
+</script>
+
+<style>
+ul {
+  padding-left: 20px;
+  margin-bottom: 16px;  
+}
+li {
+  margin: 0 0 0.5em;
+}
+.position, .project-name {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.technologies-used {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+</style>

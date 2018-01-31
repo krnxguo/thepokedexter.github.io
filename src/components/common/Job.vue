@@ -10,11 +10,29 @@
           </v-toolbar>
           <v-container>
             <h5 class="headline position">{{ position }}</h5>
-            <ul>
-              <li v-for="(bulletPoint, index) in bulletPoints" :key="index">
+            <ul v-if="bulletPoints.length > 0">
+              <li v-for="(bulletPoint, index) in bulletPoints" :key="position + index">
                 <span class="body-1">{{ bulletPoint }}</span>            
               </li>
             </ul>
+            <span 
+              v-if="projects.length > 0"
+              v-for="(project, projectIndex) in projects" 
+              :key="project.projectName" 
+            >
+              <h6 class="title project-name">{{ project.projectName }}</h6>
+              <ul 
+                v-if="project.bulletPoints.length > 0" 
+                :class="projectIndex === projects.length - 1 ? null : 'project-bullet-points'"
+              >
+                <li 
+                  v-for="(projectBulletPoint, index) in project.bulletPoints" 
+                  :key="project.projectName + index"
+                >
+                  <span class="body-1">{{ projectBulletPoint }}</span>            
+                </li>
+              </ul>
+            </span>
           </v-container>
         </v-card>
       </v-flex>
@@ -46,6 +64,12 @@ export default {
       default: function () {
         return []
       }
+    },
+    projects: {
+      type: Array,
+      default: function () {
+        return []
+      }
     }
   },
   data () {
@@ -61,8 +85,11 @@ ul {
 li {
   margin: 0 0 0.5em;
 }
-.position {
+.position, .project-name {
   margin-top: 8px;
+  margin-bottom: 16px;
+}
+.project-bullet-points {
   margin-bottom: 16px;
 }
 </style>

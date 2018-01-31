@@ -10,19 +10,6 @@
       "bulletPoints": [
         "Communicated effectively with technical lead and product manager in an agile environment to ensure tasks are assigned appropriately and delivered on schedule",
         "Spearheaded frontend development of greenfield project by researching best practises for modern web applications and setting up initial configurations for Angular, Webpack, Redux and Karma"
-      ],
-      "skills": [
-        "TypeScript",
-        "C#",
-        ".NET Core",
-        "HTML",
-        "Sass/CSS",
-        "Karma",
-        "Jasmine",
-        "Redux",
-        "Webpack",
-        "XUnit",
-        "Git"
       ]
     }, {
       "projectName": "E-Commerce Platform",
@@ -31,20 +18,26 @@
         "Designed and implemented RESTful API endpoints in Node.js to store and retrieve data from PostgreSQL database using an ORM",
         "Integrated third-party payment processor's API into checkout workflow",
         "Created and maintained consistent reusable Sass/CSS styles"
-      ],
-      "skills": [
-        "JavaScript",
-        "React",
-        "Node.js",
-        "PostgreSQL",
-        "Sass/CSS",
-        "Redux",
-        "Webpack",
-        "Jest",
-        "Bootstrap",
-        "Git"
       ]
-    }]
+    }],
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "C#",
+      "React",
+      "Node.js",
+      ".NET Core",
+      "HTML",
+      "Sass/CSS",
+      "Jest",
+      "Karma",
+      "Jasmine",
+      "Redux",
+      "Webpack",
+      "XUnit",
+      "Bootstrap",
+      "Git"
+    ]
   }, {
     "employer": "MS/MRI Research Group",
     "startDate": "Jan 2015",
@@ -58,6 +51,7 @@
     ],
     "skills": [
       "C++",
+      "MATLAB",
       "CVS"
     ]
   }, {

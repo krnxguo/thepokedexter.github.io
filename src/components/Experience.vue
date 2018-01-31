@@ -13,6 +13,7 @@
       :position="job.position"
       :bulletPoints="job.bulletPoints"
       :projects="job.projects"
+      :skills="job.skills"
     ></job>
   </div>
 </template>

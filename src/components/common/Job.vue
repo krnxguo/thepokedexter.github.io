@@ -17,13 +17,12 @@
             </ul>
             <span 
               v-if="projects.length > 0"
-              v-for="(project, projectIndex) in projects" 
+              v-for="(project) in projects" 
               :key="project.projectName" 
             >
               <h6 class="title project-name">{{ project.projectName }}</h6>
               <ul 
-                v-if="project.bulletPoints.length > 0" 
-                :class="projectIndex === projects.length - 1 ? null : 'project-bullet-points'"
+                v-if="project.bulletPoints.length > 0"
               >
                 <li 
                   v-for="(projectBulletPoint, index) in project.bulletPoints" 
@@ -32,6 +31,13 @@
                   <span class="body-1">{{ projectBulletPoint }}</span>            
                 </li>
               </ul>
+            </span>
+            <span v-if="skills.length > 0">
+              <hr/>
+              <h6 class="title technologies-used">Technologies Used</h6>
+              <v-chip v-for="(skill) in skills" :key="skill">
+                <strong>{{ skill }}</strong>
+              </v-chip>
             </span>
           </v-container>
         </v-card>
@@ -70,6 +76,12 @@ export default {
       default: function () {
         return []
       }
+    },
+    skills: {
+      type: Array,
+      default: function () {
+        return []
+      }
     }
   },
   data () {
@@ -81,6 +93,7 @@ export default {
 <style>
 ul {
   padding-left: 20px;
+  margin-bottom: 16px;  
 }
 li {
   margin: 0 0 0.5em;
@@ -89,7 +102,8 @@ li {
   margin-top: 8px;
   margin-bottom: 16px;
 }
-.project-bullet-points {
+.technologies-used {
+  margin-top: 24px;
   margin-bottom: 16px;
 }
 </style>

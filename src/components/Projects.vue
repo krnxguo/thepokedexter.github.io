@@ -4,8 +4,10 @@
 
 <script>
 import data from '../assets/data/projects';
+import Project from './common/Project';
 
 export default {
+  components: { Project },
   data () {
     return {
     }

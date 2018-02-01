@@ -12,6 +12,7 @@
       </span>
       <tools id="tools"/>
       <experience id="experience"/>
+      <projects id="projects"/>
     </v-container>
   </v-app>
 </template>
@@ -23,6 +24,7 @@ import Skills from './components/Skills'
 import Navigation from './components/Navigation'
 import Tools from './components/Tools'
 import Experience from './components/Experience'
+import Projects from './components/Projects'
 
 import skills from './assets/data/skills'
 
@@ -33,7 +35,8 @@ export default {
     Skills,
     Navigation,
     Tools,
-    Experience
+    Experience,
+    Projects
   },
   data () {
     return {

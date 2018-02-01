@@ -1,0 +1,34 @@
+{
+  "title": "Personal Projects",
+  "projects": [{
+    "projectName": "Resume Webpage",
+    "startDate": "Dec 2017",
+    "endDate": "Present",
+    "bulletPoints": [
+      "worked on this page"
+    ],
+    "skills": [
+      "JavaScript",
+      "Vue.js",
+      "Material Design"
+    ]
+  }, {
+    "projectName": "PictureThis!",
+    "startDate": "Sept 2015",
+    "endDate": "Dec 2015",
+    "bulletPoints": [
+      "Collaborated with three other students to create a mobile and web social puzzle game using Cordova, Django and MySQL",
+      "Built a RESTful API to handle game logic and store data in MySQL database using Django",
+      "Used JavaScript and HTML/CSS as part of the Cordova framework to create a responsive client-side app"
+    ],
+    "skills": [
+      "JavaScript",
+      "Python",
+      "Cordova",
+      "Django",
+      "MySQL",
+      "HTML",
+      "CSS"
+    ]
+  }]
+}

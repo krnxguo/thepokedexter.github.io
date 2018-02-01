@@ -24,7 +24,7 @@ import Skills from './components/Skills'
 import Navigation from './components/Navigation'
 import Tools from './components/Tools'
 import Experience from './components/Experience'
-import Projects from './components/Projects';
+import Projects from './components/Projects'
 
 import skills from './assets/data/skills'
 

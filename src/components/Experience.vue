@@ -6,7 +6,8 @@
       </v-flex>
     </v-layout>
     <job
-      v-for="(job) in experience" :key="job.employer + job.startDate"
+      v-for="(job) in experience" 
+      :key="job.employer + job.startDate"
       :employer="job.employer"
       :startDate="job.startDate"
       :endDate="job.endDate"

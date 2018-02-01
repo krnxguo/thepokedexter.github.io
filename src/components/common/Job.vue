@@ -91,13 +91,6 @@ export default {
 </script>
 
 <style>
-ul {
-  padding-left: 20px;
-  margin-bottom: 16px;  
-}
-li {
-  margin: 0 0 0.5em;
-}
 .position, .project-name {
   margin-top: 8px;
   margin-bottom: 16px;

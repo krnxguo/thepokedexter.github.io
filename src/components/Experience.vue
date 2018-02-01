@@ -2,7 +2,7 @@
   <div id="experience">
     <v-layout>
       <v-flex xs12 sm10 lg8 offset-xs0 offset-sm1 offset-lg2>
-        <h3 id="title" class="display-2">{{ title }}</h3>
+        <h3 class="display-1 section-title">{{ title }}</h3>
       </v-flex>
     </v-layout>
     <job
@@ -32,12 +32,3 @@ export default {
   }
 }
 </script>
-
-<style>
-#title {
-  text-align: center;
-  color: #494949;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-</style>

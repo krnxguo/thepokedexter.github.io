@@ -32,10 +32,12 @@
             </span>
             <span v-if="skills.length > 0">
               <hr/>
-              <h6 class="title technologies-used">Technologies Used</h6>
-              <v-chip v-for="(skill) in skills" :key="skill">
-                <strong>{{ skill }}</strong>
-              </v-chip>
+              <h6 class="technologies-used-title">Technologies Used</h6>
+              <div class="technologies">
+                <v-chip v-for="(skill) in skills" :key="skill">
+                  <strong>{{ skill }}</strong>
+                </v-chip>
+              </div>
             </span>
           </v-container>
         </v-card>
@@ -100,8 +102,13 @@ li {
   margin-top: 8px;
   margin-bottom: 16px;
 }
-.technologies-used {
-  margin-top: 24px;
-  margin-bottom: 16px;
+.technologies-used-title {
+  margin: 16px 0 12px 5px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.technologies {
+  margin-bottom: 8px;
 }
 </style>

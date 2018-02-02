@@ -22,10 +22,12 @@ export default {
   data () {
     return {
       tabs: [
-        {label: 'Contact Info', anchor: 'contact-info'},
+        {label: 'Contact', anchor: 'contact-info'},
         {label: 'Introduction', anchor: 'introduction'},
         {label: 'Skills', anchor: 'skills'},
-        {label: 'Tools', anchor: 'tools'}
+        {label: 'Technologies', anchor: 'technologies'},
+        {label: 'Experience', anchor: 'work-experience'},
+        {label: 'Projects', anchor: 'projects'}
       ],
       active: null
     }

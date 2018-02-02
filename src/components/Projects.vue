@@ -8,13 +8,14 @@
       :startDate="project.startDate"
       :endDate="project.endDate"
       :bulletPoints="project.bulletPoints"
-      :skills="project.skills"
+      :technologies="project.technologies"
     />
   </div>
 </template>
 
 <script>
 import data from '../assets/data/projects'
+
 import Project from './common/Project'
 import SectionTitle from './common/SectionTitle'
 

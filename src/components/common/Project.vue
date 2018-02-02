@@ -14,7 +14,7 @@
                 <span class="body-1">{{ bulletPoint }}</span>            
               </li>
             </ul>
-            <technologies-used :technologies="skills"/>
+            <technologies-used :technologies="technologies"/>
           </v-container>
         </v-card>
       </v-flex>
@@ -46,7 +46,7 @@ export default {
         return []
       }
     },
-    skills: {
+    technologies: {
       type: Array,
       default: function () {
         return []

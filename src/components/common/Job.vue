@@ -30,7 +30,7 @@
                 </li>
               </ul>
             </span>
-            <technologies-used :technologies="skills" />
+            <technologies-used :technologies="technologies" />
           </v-container>
         </v-card>
       </v-flex>
@@ -72,7 +72,7 @@ export default {
         return []
       }
     },
-    skills: {
+    technologies: {
       type: Array,
       default: function () {
         return []

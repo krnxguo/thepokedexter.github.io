@@ -20,7 +20,7 @@
         "Created and maintained consistent reusable Sass/CSS styles"
       ]
     }],
-    "skills": [
+    "technologies": [
       "JavaScript",
       "TypeScript",
       "C#",
@@ -50,7 +50,7 @@
       "Migrated software programs from Debian 3/5 to Debian 7",
       "Wrote and edited technical specification documents"
     ],
-    "skills": [
+    "technologies": [
       "C++",
       "MATLAB",
       "CVS"
@@ -64,7 +64,7 @@
       "Wrote Python scripts in an Linux environment to study the evolution of a small flowering plant; findings are published in Plant Physiology",
       "Summarized research findings in a formal report and presented conclusions to a group of six researchers"
     ],
-    "skills": [
+    "technologies": [
       "Python"
     ],
     "publications": []
@@ -78,7 +78,7 @@
       "Engaged struggling students online and during weekly office hours",
       "Rigorously evaluated answers to open-ended programming questions on midterm and final exams to ensure fair and consistent grading"
     ],
-    "skills": [
+    "technologies": [
       "Python"
     ]
   }]

@@ -10,7 +10,7 @@
       :position="job.position"
       :bulletPoints="job.bulletPoints"
       :projects="job.projects"
-      :skills="job.skills"
+      :technologies="job.technologies"
     ></job>
   </div>
 </template>

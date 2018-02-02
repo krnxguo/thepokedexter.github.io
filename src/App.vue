@@ -4,6 +4,7 @@
     <v-container grid-list-xl>
       <contact-info id="contact-info"/>
       <introduction id="introduction"/>
+      <technologies id="technologies"/>      
       <span id="skills" v-for="skill in skills" :key="skill.skillType">
         <skills
           :title="skill.skillType"
@@ -25,6 +26,7 @@ import Navigation from './components/Navigation'
 import Tools from './components/Tools'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
+import Technologies from './components/Technologies'
 
 import skills from './assets/data/skills'
 
@@ -36,11 +38,12 @@ export default {
     Navigation,
     Tools,
     Experience,
-    Projects
+    Projects,
+    Technologies
   },
   data () {
     return {
-      skills: skills
+      skills: skills.skills
     }
   }
 }

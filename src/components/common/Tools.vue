@@ -25,14 +25,19 @@
 </template>
 
 <script>
-import data from '../../assets/data/tools'
-
 export default {
-  data () {
-    return {
-      title: data.title,
-      tools: data.tools
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    tools: {
+      type: Array,
+      required: true
     }
+  },
+  data () {
+    return {}
   }
 }
 </script>

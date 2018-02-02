@@ -6,12 +6,16 @@
       :title="skill.skillType"
       :skills="skill.skills"
     />
-    <tools/>
+    <tools
+      v-for="tool in tools" :key="tool.title"
+      :title="tool.title"
+      :tools="tool.tools"
+    />
   </div>
 </template>
 
 <script>
-import skillsData from '../assets/data/skills'
+import data from '../assets/data/technologies'
 
 import Skills from './common/Skills'
 import SectionTitle from './common/SectionTitle'
@@ -21,8 +25,9 @@ export default {
   components: { Skills, SectionTitle, Tools },
   data () {
     return {
-      title: skillsData.title,
-      skills: skillsData.skills
+      title: data.title,
+      skills: data.skills,
+      tools: data.tools
     }
   }
 }

@@ -23,7 +23,6 @@
 import Rating from './Rating'
 
 export default {
-  name: 'Skills',
   components: { Rating },
   props: {
     title: {

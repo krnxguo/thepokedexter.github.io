@@ -90,13 +90,4 @@ export default {
   margin-top: 8px;
   margin-bottom: 16px;
 }
-.technologies-used-title {
-  margin: 16px 0 12px 5px;
-  font-size: 15px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.technologies {
-  margin-bottom: 8px;
-}
 </style>

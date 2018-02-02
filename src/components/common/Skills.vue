@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Rating from './common/Rating'
+import Rating from './Rating'
 
 export default {
   name: 'Skills',

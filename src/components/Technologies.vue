@@ -1,18 +1,26 @@
 <template>
   <div id="technologies">
     <section-title :title="title"/>
+    <skills
+      v-for="skill in skills" :key="skill.skillType"
+      :title="skill.skillType"
+      :skills="skill.skills"
+    />
   </div>
 </template>
 
 <script>
-import data from '../assets/data/skills'
+import skillsData from '../assets/data/skills'
+
+import Skills from './common/Skills'
 import SectionTitle from './common/SectionTitle'
 
 export default {
-  components: { SectionTitle },
+  components: { Skills, SectionTitle },
   data () {
     return {
-      title: data.title
+      title: skillsData.title,
+      skills: skillsData.skills
     }
   }
 }

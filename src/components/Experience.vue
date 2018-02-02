@@ -1,10 +1,6 @@
 <template>
   <div id="experience">
-    <v-layout>
-      <v-flex xs12 sm10 lg8 offset-xs0 offset-sm1 offset-lg2>
-        <h3 class="display-1 section-title">{{ title }}</h3>
-      </v-flex>
-    </v-layout>
+    <section-title :title="title"/>
     <job
       v-for="(job) in experience" 
       :key="job.employer + job.startDate"
@@ -22,9 +18,10 @@
 <script>
 import data from '../assets/data/experience'
 import Job from './common/Job'
+import SectionTitle from './common/SectionTitle'
 
 export default {
-  components: { Job },
+  components: { Job, SectionTitle },
   data () {
     return {
       experience: data.experience,

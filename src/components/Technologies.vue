@@ -6,6 +6,7 @@
       :title="skill.skillType"
       :skills="skill.skills"
     />
+    <tools/>
   </div>
 </template>
 
@@ -14,9 +15,10 @@ import skillsData from '../assets/data/skills'
 
 import Skills from './common/Skills'
 import SectionTitle from './common/SectionTitle'
+import Tools from './common/Tools'
 
 export default {
-  components: { Skills, SectionTitle },
+  components: { Skills, SectionTitle, Tools },
   data () {
     return {
       title: skillsData.title,

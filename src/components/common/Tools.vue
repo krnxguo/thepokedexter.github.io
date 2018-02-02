@@ -25,10 +25,9 @@
 </template>
 
 <script>
-import data from '../assets/data/tools'
+import data from '../../assets/data/tools'
 
 export default {
-  name: 'Tools',
   data () {
     return {
       title: data.title,

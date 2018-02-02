@@ -5,7 +5,6 @@
       <contact-info id="contact-info"/>
       <introduction id="introduction"/>
       <technologies id="technologies"/>
-      <tools id="tools"/>
       <experience id="experience"/>
       <projects id="projects"/>
     </v-container>
@@ -16,7 +15,6 @@
 import ContactInfo from './components/ContactInfo'
 import Introduction from './components/Introduction'
 import Navigation from './components/Navigation'
-import Tools from './components/Tools'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Technologies from './components/Technologies'
@@ -26,7 +24,6 @@ export default {
     ContactInfo,
     Introduction,
     Navigation,
-    Tools,
     Experience,
     Projects,
     Technologies

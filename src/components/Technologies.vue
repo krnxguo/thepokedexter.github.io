@@ -17,9 +17,9 @@
 <script>
 import data from '../assets/data/technologies'
 
-import Skills from './common/Skills'
+import Skills from './subsections/Skills'
 import SectionTitle from './common/SectionTitle'
-import Tools from './common/Tools'
+import Tools from './subsections/Tools'
 
 export default {
   components: { Skills, SectionTitle, Tools },

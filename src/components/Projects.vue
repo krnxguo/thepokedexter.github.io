@@ -16,7 +16,7 @@
 <script>
 import data from '../assets/data/projects'
 
-import Project from './common/Project'
+import Project from './subsections/Project'
 import SectionTitle from './common/SectionTitle'
 
 export default {

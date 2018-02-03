@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Rating from './Rating'
+import Rating from '../common/Rating'
 
 export default {
   components: { Rating },

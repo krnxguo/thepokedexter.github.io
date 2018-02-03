@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import TechnologiesUsed from './TechnologiesUsed'
+import TechnologiesUsed from '../common/TechnologiesUsed'
 
 export default {
   components: { TechnologiesUsed },

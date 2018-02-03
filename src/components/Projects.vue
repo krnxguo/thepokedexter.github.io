@@ -1,10 +1,6 @@
 <template>
   <div id="projects">
-    <v-layout>
-      <v-flex xs12 sm10 lg8 offset-xs0 offset-sm1 offset-lg2>
-        <h3 class="display-1 section-title">{{ title }}</h3>
-      </v-flex>
-    </v-layout>
+    <section-title :title="title"/>
     <project
       v-for="(project) in projects"
       :key="project.projectName"
@@ -12,17 +8,19 @@
       :startDate="project.startDate"
       :endDate="project.endDate"
       :bulletPoints="project.bulletPoints"
-      :skills="project.skills"
+      :technologies="project.technologies"
     />
   </div>
 </template>
 
 <script>
 import data from '../assets/data/projects'
-import Project from './common/Project'
+
+import Project from './subsections/Project'
+import SectionTitle from './common/SectionTitle'
 
 export default {
-  components: { Project },
+  components: { Project, SectionTitle },
   data () {
     return {
       title: data.title,

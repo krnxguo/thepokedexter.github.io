@@ -7,7 +7,7 @@
     "bulletPoints": [
       "worked on this page"
     ],
-    "skills": [
+    "technologies": [
       "JavaScript",
       "Vue.js",
       "Material Design"
@@ -21,7 +21,7 @@
       "Built a RESTful API to handle game logic and store data in MySQL database using Django",
       "Used JavaScript and HTML/CSS as part of the Cordova framework to create a responsive client-side app"
     ],
-    "skills": [
+    "technologies": [
       "JavaScript",
       "Python",
       "Cordova",

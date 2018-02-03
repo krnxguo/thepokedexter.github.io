@@ -30,15 +30,7 @@
                 </li>
               </ul>
             </span>
-            <span v-if="skills.length > 0">
-              <hr/>
-              <h6 class="technologies-used-title">Technologies Used</h6>
-              <div class="technologies">
-                <v-chip v-for="(skill) in skills" :key="skill">
-                  <strong>{{ skill }}</strong>
-                </v-chip>
-              </div>
-            </span>
+            <technologies-used :technologies="technologies" />
           </v-container>
         </v-card>
       </v-flex>
@@ -47,7 +39,10 @@
 </template>
 
 <script>
+import TechnologiesUsed from '../common/TechnologiesUsed'
+
 export default {
+  components: { TechnologiesUsed },
   props: {
     employer: {
       type: String,
@@ -77,7 +72,7 @@ export default {
         return []
       }
     },
-    skills: {
+    technologies: {
       type: Array,
       default: function () {
         return []
@@ -94,14 +89,5 @@ export default {
 .position, .project-name {
   margin-top: 8px;
   margin-bottom: 16px;
-}
-.technologies-used-title {
-  margin: 16px 0 12px 5px;
-  font-size: 15px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.technologies {
-  margin-bottom: 8px;
 }
 </style>

@@ -21,5 +21,11 @@ export default {
 </script>
 
 <style>
-
+.section-title {
+  text-align: center;
+  color: #494949;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
 </style>

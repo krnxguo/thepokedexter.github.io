@@ -20,10 +20,9 @@
 </template>
 
 <script>
-import Rating from './common/Rating'
+import Rating from '../common/Rating'
 
 export default {
-  name: 'Skills',
   components: { Rating },
   props: {
     title: {

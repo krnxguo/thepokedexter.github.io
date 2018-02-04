@@ -8,7 +8,7 @@ My resume and personal website created using Vue.js and Material Design principl
 
 ## Motivation
 
-As a mostly React and Bootstrap developer, this was a chance for me experiment with Vue.js and Material, and create a demo-able product while I'm at it. Using Git to manage this project allows me to keep my resume up to date easily. 
+As a mostly React and Bootstrap developer, this was a chance for me experiment with Vue.js and Material, and create a demo-able product while I'm at it. Using Git to manage this project allows me to keep my resume up to date more easily. 
 
 ## Build Setup
 

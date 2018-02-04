@@ -9,13 +9,15 @@
           </v-toolbar>
           <v-container>
             <h5 class="headline">{{ experience.position }}</h5>
-            <h6
-              v-for="(date) in experience.employmentDates"
-              :key="date.startDate + date.endDate"
-              class="title employment-date"
-            >
-              {{ date.startDate + ' - ' + date.endDate }}
-            </h6>
+            <v-layout row wrap>
+              <v-flex 
+                v-for="(date) in experience.employmentDates"
+                :key="date.startDate + date.endDate"
+                class="title employment-date"
+              >
+                {{ date.startDate + ' - ' + date.endDate }}              
+              </v-flex>
+            </v-layout>
           </v-container>
         </v-card>
       </v-flex>
@@ -41,8 +43,6 @@ export default {
 
 <style>
 .employment-date {
-  margin-bottom: 6px;
-  margin-left: 12px;
   font-weight: 400;
 }
 </style>

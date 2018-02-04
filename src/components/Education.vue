@@ -6,16 +6,16 @@
         <v-card dark color="pink">
           <v-container>
             <v-layout row wrap>
-              <v-flex xs2>
+              <v-flex class="graduation-cap-wrapper" xs2>
                 <span class="fa-stack fa-2x">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
                 </span>
               </v-flex>
               <v-flex xs10>
-                <h5 class="headline">{{ education.school }}</h5>
-                <h6 class="title">{{ education.degree + ', ' + education.major }}</h6>
-                <span class="subheading">{{ 'Graduated in ' + education.graduationDate }}</span>
+                <h5 class="headline text-line">{{ education.school }}</h5>
+                <h6 class="title text-line">{{ education.degree + ', ' + education.major }}</h6>
+                <span class="subheading text-line">{{ 'Graduated in ' + education.graduationDate }}</span>
               </v-flex>
             </v-layout>
           </v-container>
@@ -44,5 +44,16 @@ export default {
 <style>
 .fa-inverse {
   color: #FF0056;
+}
+.text-line {
+  margin-bottom: 6px;
+}
+.graduation-cap-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.fa-stack {
+  position: absolute;
 }
 </style>

@@ -17,6 +17,7 @@
 
 <script>
 import data from '../assets/data/experience'
+
 import Job from './subsections/Job'
 import SectionTitle from './common/SectionTitle'
 

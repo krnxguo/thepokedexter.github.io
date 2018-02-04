@@ -5,7 +5,7 @@
         <v-card>
           <v-toolbar class="indigo" dense dark flat>
             <v-spacer></v-spacer>
-            <v-toolbar-title>{{ startDate + " - " + endDate}}</v-toolbar-title>
+            <v-toolbar-title>{{ startDate + " - " + endDate }}</v-toolbar-title>
           </v-toolbar>
           <v-container>
             <h5 class="headline project-name">{{ projectName }}</h5>

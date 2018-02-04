@@ -2,7 +2,7 @@
   <div id="skills">
     <v-layout>
       <v-flex xs12 sm10 lg8 offset-xs0 offset-sm1 offset-lg2>
-        <v-card dark color="purple">
+        <v-card dark color="deep-purple">
           <v-container>
             <v-flex xs12>
               <h5 class="headline tools-heading">{{ title }}</h5>

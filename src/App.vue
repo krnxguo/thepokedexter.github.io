@@ -9,6 +9,7 @@
       <projects id="projects"/>
       <education id="education"/>
       <other-experience id="other-experience"/>
+      <interests id="interests"/>
     </v-container>
   </v-app>
 </template>
@@ -22,6 +23,7 @@ import Projects from './components/Projects'
 import Technologies from './components/Technologies'
 import Education from './components/Education'
 import OtherExperience from './components/OtherExperience'
+import Interests from './components/Interests'
 
 export default {
   components: {
@@ -32,7 +34,8 @@ export default {
     Projects,
     Technologies,
     Education,
-    OtherExperience
+    OtherExperience,
+    Interests
   },
   data () {
     return {}

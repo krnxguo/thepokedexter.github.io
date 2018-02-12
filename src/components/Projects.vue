@@ -9,6 +9,7 @@
       :endDate="project.endDate"
       :bulletPoints="project.bulletPoints"
       :technologies="project.technologies"
+      :isThis="project.projectName === 'Resume Webpage'"
     />
   </div>
 </template>

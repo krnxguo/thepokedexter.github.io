@@ -4,6 +4,7 @@
       <v-flex xs12 sm10 lg8 offset-xs0 offset-sm1 offset-lg2>
         <v-card>
           <v-toolbar class="indigo" dense dark flat>
+            <v-toolbar-title v-if="isThis">(This Webpage)</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-title>{{ startDate + " - " + endDate }}</v-toolbar-title>
           </v-toolbar>
@@ -39,6 +40,12 @@ export default {
     endDate: {
       type: String,
       required: true
+    },
+    isThis: {
+      type: Boolean,
+      default: function () {
+        return false
+      }
     },
     bulletPoints: {
       type: Array,

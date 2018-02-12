@@ -8,8 +8,8 @@
               <h5 class="headline">{{ title }}</h5>
             </v-flex>
             <v-flex xs12>
-              <p>
-                {{ blurb }}
+              <p v-for="(paragraph, index) in blurb" :key="index">
+                {{ paragraph }}
               </p>
             </v-flex>
             <hr/>

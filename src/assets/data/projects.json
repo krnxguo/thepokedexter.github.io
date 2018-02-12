@@ -5,12 +5,16 @@
     "startDate": "Dec 2017",
     "endDate": "Present",
     "bulletPoints": [
-      "worked on this page"
+      "Used Vue.js to build a personal resume webpage with reuseable components and custom styling",
+      "Followed Material Design principles to create a clean and modern resume webpage",
+      "Maintained source code and kept track of progress using Git and Github issues, respectively"
     ],
     "technologies": [
       "JavaScript",
       "Vue.js",
-      "Material Design"
+      "Vuetify",
+      "CSS",
+      "Git"
     ]
   }, {
     "projectName": "PictureThis!",
@@ -28,7 +32,8 @@
       "Django",
       "MySQL",
       "HTML",
-      "CSS"
+      "CSS",
+      "Git"
     ]
   }]
 }

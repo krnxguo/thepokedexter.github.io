@@ -8,8 +8,9 @@
     "projects": [{
       "projectName": "Data Center Infrastructure Management Software",
       "bulletPoints": [
-        "Communicated effectively with technical lead and product manager in an agile environment to ensure tasks are assigned appropriately and delivered on schedule",
-        "Spearheaded frontend development of greenfield project by researching best practises for modern web applications and setting up initial configurations for Angular, Webpack, Redux and Karma"
+        "Created models, services and controllers for API endpoints in .NET core, with XUnit tests, and integrated endpoints into Angular client",
+        "Spearheaded frontend development of greenfield project by researching best practises for modern web applications and setting up initial configurations for Angular, Webpack, Redux and Karma",
+        "Communicated effectively with technical lead and product manager in an agile environment to ensure tasks are assigned appropriately and delivered on schedule"
       ]
     }, {
       "projectName": "E-Commerce Platform",

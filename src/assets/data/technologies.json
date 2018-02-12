@@ -18,7 +18,8 @@
         {"label": "Angular", "rating": 5},
         {"label": "Node.js", "rating": 4},
         {"label": ".NET Core", "rating": 3},
-        {"label": "Vue.js", "rating": 3}
+        {"label": "Vue.js", "rating": 4},
+        {"label": "Jasmine", "rating": 3}
       ]
     }
   ],

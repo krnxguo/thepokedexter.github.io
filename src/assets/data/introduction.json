@@ -1,4 +1,8 @@
 {
   "title": "Introduction",
-  "blurb": "Full stack developer with professional experience in modern web frameworks. Lifelong learner who values clean code, best practises, and effective team communication."
+  "blurb": [
+    "I'm a full stack developer with professional experience in modern web frameworks, including React, Angular, Node.js and .NET core. More importantly, I'm also a lifelong learner who values clean code, best practises, and effective team communication.",
+    "I graduated from UBC in May 2016.",
+    "This webpage was built using Vue.js and Material Design principles. It's currently a work in progress, the source code is avaliable on my Github."
+  ]
 }

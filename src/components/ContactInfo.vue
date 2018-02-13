@@ -12,6 +12,9 @@
                 <v-flex class="heading" xs12>
                   <h5 class="headline">{{ title }}</h5>
                 </v-flex>
+                <v-flex class="alert-wrapper" v-if="alert" xs12>
+                  <v-alert :color="alert.type" icon="priority_high" value="true">{{ alert.text }}</v-alert>
+                </v-flex>
                 <v-flex xs8 sm6 md12 offset-xs2 offset-sm3 offset-md0>
                   <span v-for="(ci) in contactInfo" :key="ci.method">
                     <v-layout row wrap>
@@ -59,7 +62,8 @@ export default {
       name: `${data.firstName} ${data.lastName}`,
       title: data.title,
       contactInfo: data.contactInfo,
-      socialMedia: data.socialMedia
+      socialMedia: data.socialMedia,
+      alert: data.alert
     }
   }
 }
@@ -81,6 +85,9 @@ a {
   margin-left: 6px;
   top: 6px;
   position: relative;
+}
+.alert-wrapper {
+  padding: 0 12px;
 }
 @media only screen and (max-width: 960px) {
   #text-column {

@@ -54,6 +54,6 @@ export default {
   justify-content: center;
 }
 .fa-stack {
-  position: absolute;
+  position: absolute !important;
 }
 </style>

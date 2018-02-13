@@ -1,0 +1,39 @@
+{
+  "title": "Personal Projects",
+  "projects": [{
+    "projectName": "Resume Webpage",
+    "startDate": "Dec 2017",
+    "endDate": "Present",
+    "bulletPoints": [
+      "Used Vue.js to build a personal resume webpage with reuseable components and custom styling",
+      "Followed Material Design principles to create a clean and modern resume webpage",
+      "Maintained source code and kept track of progress using Git and Github issues, respectively"
+    ],
+    "technologies": [
+      "JavaScript",
+      "Vue.js",
+      "Vuetify",
+      "CSS",
+      "Git"
+    ]
+  }, {
+    "projectName": "PictureThis!",
+    "startDate": "Sept 2015",
+    "endDate": "Dec 2015",
+    "bulletPoints": [
+      "Collaborated with three other students to create a mobile and web social puzzle game using Cordova, Django and MySQL",
+      "Built a RESTful API to handle game logic and store data in MySQL database using Django",
+      "Used JavaScript and HTML/CSS as part of the Cordova framework to create a responsive client-side app"
+    ],
+    "technologies": [
+      "JavaScript",
+      "Python",
+      "Cordova",
+      "Django",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "Git"
+    ]
+  }]
+}

@@ -1,0 +1,14 @@
+{
+  "firstName": "Karen",
+  "lastName": "Guo",
+  "title": "Full Stack Software Developer",
+  "contactInfo": [
+    {"method": "Location", "contact": "Vancouver, BC"},
+    {"method": "Phone", "contact": "778.858.8070"},
+    {"method": "Email", "contact": "krn.x.guo@gmail.com", "url": "mailto:krn.x.guo@gmail.com"}
+  ],
+  "socialMedia": [
+    {"icon": "fa-github", "url": "https://github.com/ThePokedexter", "label": "Github"},
+    {"icon": "fa-linkedin-square", "url": "https://linkedin.com/in/kxguo", "label": "LinkedIn"}
+  ]
+}

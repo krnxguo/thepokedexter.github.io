@@ -7,10 +7,10 @@
             <v-layout row wrap>
               <v-flex id="text-column" xs12 md8>
                 <v-flex class="heading" xs12>
-                  <h1 class="display-2">{{ name }}</h1>
+                  <h3 class="display-2">{{ name }}</h3>
                 </v-flex>
                 <v-flex class="heading" xs12>
-                  <h2 class="headline">{{ title }}</h2>
+                  <h5 class="headline">{{ title }}</h5>
                 </v-flex>
                 <v-flex xs8 sm6 md12 offset-xs2 offset-sm3 offset-md0>
                   <span v-for="(ci) in contactInfo" :key="ci.method">
@@ -19,17 +19,18 @@
                         <strong>{{ ci.method }}</strong>
                       </v-flex>
                       <v-flex class="contact" xs8 md6>
-                        {{ ci.contact }}
+                        <a v-if="ci.url" :href="ci.url">{{ ci.contact }}</a>
+                        <span v-else>{{ ci.contact }}</span>
                       </v-flex>
                     </v-layout>
                   </span>
                 </v-flex>
                 <v-flex xs10 sm8 md12 offset-xs1 offset-sm2 offset-md0>
                   <v-layout id="social-media-icons" row wrap>
-                    <v-flex v-for="(sm) in socialMedia" :key="sm.icon">
+                    <v-flex md6 v-for="(sm) in socialMedia" :key="sm.icon">
                       <a v-bind:href="sm.url" target="_blank">
                         <v-icon class="social-media-icon">{{ sm.icon }}</v-icon>
-                        {{ sm.label }}
+                        <span class="social-media-label">{{ sm.label }}</span>
                       </a>
                     </v-flex>
                   </v-layout>
@@ -49,24 +50,16 @@
 </template>
 
 <script>
+import data from '../assets/data/contact-info'
+
 export default {
   name: 'ContactInfo',
   data () {
     return {
-      name: 'Karen Guo',
-      title: 'Full Stack Software Developer',
-      location: 'Vancouver, BC',
-      phone: '778.858.8070',
-      email: 'krn.x.guo@gmail.com',
-      contactInfo: [
-        {method: 'Location', contact: 'Vancouver, BC'},
-        {method: 'Phone', contact: '778.858.8070'},
-        {method: 'Email', contact: 'krn.x.guo@gmail.com'}
-      ],
-      socialMedia: [
-        {icon: 'fa-github', url: 'https://github.com/ThePokedexter', label: 'ThePokedexter'},
-        {icon: 'fa-linkedin-square', url: 'https://linkedin.com/in/kxguo', label: 'kxguo'}
-      ]
+      name: `${data.firstName} ${data.lastName}`,
+      title: data.title,
+      contactInfo: data.contactInfo,
+      socialMedia: data.socialMedia
     }
   }
 }
@@ -83,6 +76,11 @@ a {
 }
 .social-media-icon {
   font-size: 24px;
+}
+.social-media-label {
+  margin-left: 6px;
+  top: 6px;
+  position: relative;
 }
 @media only screen and (max-width: 960px) {
   #text-column {

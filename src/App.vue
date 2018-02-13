@@ -1,16 +1,15 @@
 <template>
   <v-app id="v-app">
+    <!-- <navigation></navigation> -->
     <v-container grid-list-xl>
-      <contact-info/>
-      <introduction/>
-      <skills
-        title="Programming Languages"
-        :skills="programmingLanguages"
-      />
-      <skills
-        title="Frameworks"
-        :skills="frameworks"
-      />
+      <contact-info id="contact-info"/>
+      <introduction id="introduction"/>
+      <technologies id="technologies"/>
+      <experience id="experience"/>
+      <projects id="projects"/>
+      <education id="education"/>
+      <other-experience id="other-experience"/>
+      <!-- <interests id="interests"/> -->
     </v-container>
   </v-app>
 </template>
@@ -18,32 +17,28 @@
 <script>
 import ContactInfo from './components/ContactInfo'
 import Introduction from './components/Introduction'
-import Skills from './components/Skills'
+import Navigation from './components/Navigation'
+import Experience from './components/Experience'
+import Projects from './components/Projects'
+import Technologies from './components/Technologies'
+import Education from './components/Education'
+import OtherExperience from './components/OtherExperience'
+import Interests from './components/Interests'
 
 export default {
   components: {
     ContactInfo,
     Introduction,
-    Skills
+    Navigation,
+    Experience,
+    Projects,
+    Technologies,
+    Education,
+    OtherExperience,
+    Interests
   },
   data () {
-    return {
-      programmingLanguages: [
-        {label: 'Javascript', rating: 5},
-        {label: 'Typescript', rating: 5},
-        {label: 'HTML/CSS', rating: 5},
-        {label: 'C#', rating: 3},
-        {label: 'C++', rating: 3},
-        {label: 'Python', rating: 2}
-      ],
-      frameworks: [
-        {label: 'React', rating: 5},
-        {label: 'Angular', rating: 5},
-        {label: 'Node.js', rating: 4},
-        {label: '.NET', rating: 3},
-        {label: 'Vue.js', rating: 3}
-      ]
-    }
+    return {}
   }
 }
 </script>
@@ -52,5 +47,8 @@ export default {
 #v-app {
   background-image: url('./assets/background-pattern.png');
   background-attachment: fixed;
+}
+#contact-info {
+  margin-top: 48px;
 }
 </style>

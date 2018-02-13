@@ -3,3 +3,11 @@
     text-align: center;
   }
 }
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 16px;  
+}
+li {
+  margin: 0 0 0.5em;
+}

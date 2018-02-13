@@ -5,18 +5,17 @@
         <v-card>
           <v-container>
             <v-flex xs12>
-              <h2 class="headline">Introduction</h2>
+              <h5 class="headline">{{ title }}</h5>
             </v-flex>
             <v-flex xs12>
-              <p>
-                Full stack developer with professional experience in modern web frameworks. 
-                Lifelong learner who values clean code, best practises, and effective team communication.
+              <p v-for="(paragraph, index) in blurb" :key="index">
+                {{ paragraph }}
               </p>
             </v-flex>
             <hr/>
             <v-layout row justify-center>
               <v-card-actions id="action-button-row">
-                <v-btn large color="success">Download Resume</v-btn>
+                <v-btn v-on:click="viewResume(resumeUrl)" large color="primary">View PDF Resume</v-btn>
               </v-card-actions>
             </v-layout>
           </v-container>
@@ -27,9 +26,20 @@
 </template>
 
 <script>
+import data from '../assets/data/introduction'
+
 export default {
   data () {
-    return {}
+    return {
+      blurb: data.blurb,
+      title: data.title,
+      resumeUrl: data.resumeUrl
+    }
+  },
+  methods: {
+    viewResume: function (url) {
+      window.open(url, '_blank')
+    }
   }
 }
 </script>

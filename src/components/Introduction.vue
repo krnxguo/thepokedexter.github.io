@@ -15,7 +15,7 @@
             <hr/>
             <v-layout row justify-center>
               <v-card-actions id="action-button-row">
-                <v-btn v-on:click="viewResume()" large color="primary">View PDF Resume</v-btn>
+                <v-btn v-on:click="viewResume(resumeUrl)" large color="primary">View PDF Resume</v-btn>
               </v-card-actions>
             </v-layout>
           </v-container>
@@ -32,12 +32,12 @@ export default {
   data () {
     return {
       blurb: data.blurb,
-      title: data.title
+      title: data.title,
+      resumeUrl: data.resumeUrl
     }
   },
   methods: {
-    viewResume: function () {
-      const url = 'https://drive.google.com/file/d/1BPvkkWbC9ZnJIKo_KYFZJVmuW0Sn8SQd/view?usp=sharing'
+    viewResume: function (url) {
       window.open(url, '_blank')
     }
   }

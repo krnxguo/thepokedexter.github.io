@@ -43,7 +43,7 @@ export default {
 
 <style>
 .fa-inverse {
-  color: #FF0056;
+  color: #FF0056 !important;
 }
 .text-line {
   margin-bottom: 6px;

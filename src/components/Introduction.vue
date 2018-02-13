@@ -15,8 +15,7 @@
             <hr/>
             <v-layout row justify-center>
               <v-card-actions id="action-button-row">
-                <!-- TODO: Add link to Google Docs resume -->
-                <v-btn large color="primary">View PDF Resume</v-btn>
+                <v-btn v-on:click="viewResume()" large color="primary">View PDF Resume</v-btn>
               </v-card-actions>
             </v-layout>
           </v-container>
@@ -34,6 +33,12 @@ export default {
     return {
       blurb: data.blurb,
       title: data.title
+    }
+  },
+  methods: {
+    viewResume: function () {
+      const url = 'https://drive.google.com/file/d/1BPvkkWbC9ZnJIKo_KYFZJVmuW0Sn8SQd/view?usp=sharing'
+      window.open(url, '_blank')
     }
   }
 }

@@ -11,3 +11,8 @@ ul {
 li {
   margin: 0 0 0.5em;
 }
+
+.alert {
+  padding: 8px 16px;
+  margin: auto;
+}

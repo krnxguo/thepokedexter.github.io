@@ -10,5 +10,9 @@
   "socialMedia": [
     {"icon": "fa-github", "url": "https://github.com/ThePokedexter", "label": "Github"},
     {"icon": "fa-linkedin-square", "url": "https://linkedin.com/in/kxguo", "label": "LinkedIn"}
-  ]
+  ],
+  "alert": {
+    "type": "warning",
+    "text": "I'm on vacation from February 28 to May 14. I will have limited access to email and will be unable to receive calls."
+  }
 }

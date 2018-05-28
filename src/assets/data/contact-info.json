@@ -12,7 +12,7 @@
     {"icon": "fa-linkedin-square", "url": "https://linkedin.com/in/kxguo", "label": "LinkedIn"}
   ],
   "alert": {
-    "type": "warning",
-    "text": "I'm on vacation from February 28 to May 14. I will have limited access to email and will be unable to receive calls."
+    "type": "success",
+    "text": "I am currently looking for a software developer role. Please feel free to contact me about new opportunities."
   }
 }

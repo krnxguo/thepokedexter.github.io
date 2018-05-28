@@ -61,7 +61,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "url-loader": "^0.5.8",
-    "vue-jest": "^1.0.2",
+    "vue-jest": "^2.6.0",
     "vue-loader": "^13.7.2",
     "vue-style-loader": "^3.1.2",
     "vue-template-compiler": "^2.5.16",
@@ -86,7 +86,6 @@
     "setupFiles": [
       "<rootDir>/test/unit/setup"
     ],
-    "mapCoverage": true,
     "coverageDirectory": "<rootDir>/test/unit/coverage",
     "collectCoverageFrom": [
       "src/**/*.{js,vue}",

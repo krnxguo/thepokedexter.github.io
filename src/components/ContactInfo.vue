@@ -41,9 +41,7 @@
               </v-flex>
               <v-flex id="image-column" xs12 md4>
                 <v-layout row-wrap align-center>
-                  <v-avatar size="200">
-                    <img src="../assets/profile-picture.jpg" alt="Profile Picture"/>
-                  </v-avatar>
+                  <img id="profile-picture" src="../assets/profile-picture.jpg" alt="Profile Picture"/>
                 </v-layout>
               </v-flex>
             </v-layout>
@@ -75,6 +73,11 @@ export default {
 a {
   text-decoration: none;
 }
+#profile-picture {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
 .social-media-icon {
   font-size: 24px;
 }
@@ -85,6 +88,13 @@ a {
 }
 .alert-wrapper {
   padding: 0 12px;
+}
+@media only screen and (min-width: 1904px) {
+  #profile-picture {
+    width: 300px;
+    height: 300px;
+    margin-left: 32px;
+  }
 }
 @media only screen and (max-width: 960px) {
   #text-column {

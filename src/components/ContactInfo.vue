@@ -41,7 +41,9 @@
               </v-flex>
               <v-flex id="image-column" xs12 md4>
                 <v-layout row-wrap align-center>
-                  <img id="profile-picture" src="../assets/profile-picture.jpg" alt="Profile Picture"/>
+                  <v-avatar size="200">
+                    <img src="../assets/profile-picture.jpg" alt="Profile Picture"/>
+                  </v-avatar>
                 </v-layout>
               </v-flex>
             </v-layout>
@@ -72,11 +74,6 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
-}
-#profile-picture {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
 }
 .social-media-icon {
   font-size: 24px;

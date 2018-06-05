@@ -1,12 +1,12 @@
 {
   "title": "Personal Projects",
   "projects": [{
-    "projectName": "Resume Webpage",
+    "projectName": "Resume Web Page",
     "startDate": "Dec 2017",
     "endDate": "Present",
     "bulletPoints": [
-      "Used Vue.js to build a personal resume webpage with reuseable components and custom styling",
-      "Followed Material Design principles to create a clean and modern resume webpage",
+      "Used Vue.js to build a personal resume web page with reusable components and custom styling",
+      "Followed Material Design principles to create a clean and modern web page showcasing professional work experience and technical skills",
       "Maintained source code and kept track of progress using Git and Github issues, respectively"
     ],
     "technologies": [

@@ -1,6 +1,5 @@
 <template>
   <v-app id="v-app">
-    <!-- <navigation></navigation> -->
     <v-container grid-list-xl>
       <contact-info id="contact-info"/>
       <introduction id="introduction"/>
@@ -9,7 +8,6 @@
       <projects id="projects"/>
       <education id="education"/>
       <other-experience id="other-experience"/>
-      <!-- <interests id="interests"/> -->
     </v-container>
   </v-app>
 </template>

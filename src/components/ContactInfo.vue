@@ -89,6 +89,13 @@ a {
 .alert-wrapper {
   padding: 0 12px;
 }
+@media only screen and (min-width: 1904px) {
+  #profile-picture {
+    width: 300px;
+    height: 300px;
+    margin-left: 32px;
+  }
+}
 @media only screen and (max-width: 960px) {
   #text-column {
     order: 2;

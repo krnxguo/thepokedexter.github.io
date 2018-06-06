@@ -2,10 +2,9 @@
   "title": "About Me",
   "blurb": [
     "I'm a full stack developer with professional experience in modern web frameworks, including React, Angular, Node.js and .NET core. More importantly, I'm also a lifelong learner who values clean code, best practises, and effective team communication.",
-    "As a student, I developed tools using Python and C++ to contribute to research in medicine and genomics. In the spring of 2016, I graduated from UBC and took a web development position at a growing startup.",  
-    "Over the next year and ten months, I became a key part of the team as an integral member to two greenfield projects. I worked on building an improved e-commerce platform and developing a new major version of the flagship data center infrastructure management software.",
-    "I went on the trip of a lifetime to travel Europe starting from February 2018. In the next two and a half months, I visited England, France, Spain, Italy, many more countries and countless cities. I have since returned to Vancouver, hungry for my next adventure!",
-    "This webpage was built using Vue.js and Material Design principles. It's currently a work in progress, the source code is avaliable on my Github."
+    "As a student, I developed tools using Python and C++ to contribute to research in medicine and genomics. In May 2016, I graduated from UBC and took a web developer position at a growing startup. Over the next year and ten months, I worked on building an improved e-commerce platform and developing a new major version of the flagship data center infrastructure management software.",
+    "In February 2018, I went on the trip of a lifetime. I spent two and an half months backpacking through Europe. I visited England, France, Spain, Italy, many more countries and countless cities. I have since returned to Vancouver, hungry for my next adventure!",
+    "This webpage was built using Vue.js and Material Design principles. It's currently a work in progress, the source code is avaliable on Github."
   ],
   "resumeUrl": "https://drive.google.com/file/d/1BPvkkWbC9ZnJIKo_KYFZJVmuW0Sn8SQd/view?usp=sharing"
 }

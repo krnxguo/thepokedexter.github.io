@@ -1,6 +1,22 @@
 {
   "title": "Technical Work Experience",
   "experience": [{
+    "employer": "Microsoft",
+    "startDate": "Oct 2018",
+    "endDate": "Present",
+    "position": "Software Engineer",
+    "bulletPoints": [
+      "Worked on the O365 support team"
+    ],
+    "technologies": [
+      "TypeScript",
+      "React",
+      ".NET Core",
+      "HTML",
+      "CSS",
+      "Git"
+    ]
+  }, {
     "employer": "Tuangru",
     "startDate": "May 2016",
     "endDate": "Feb 2018",

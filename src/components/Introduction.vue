@@ -11,6 +11,10 @@
               <p v-for="(paragraph, index) in blurb" :key="index">
                 {{ paragraph }}
               </p>
+              <p><em>
+                This webpage was built using Vue.js and Material Design principles. 
+                The source code is avaliable on my <a href="https://github.com/ThePokedexter/thepokedexter.github.io">GitHub</a>.
+              </em></p>
             </v-flex>
             <hr/>
             <v-layout row justify-center>

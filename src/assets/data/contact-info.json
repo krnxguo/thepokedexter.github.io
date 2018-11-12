@@ -1,18 +1,13 @@
 {
   "firstName": "Karen",
   "lastName": "Guo",
-  "title": "Software Developer",
+  "title": "Software Engineer at Microsoft",
   "contactInfo": [
-    {"method": "Location", "contact": "Vancouver, BC"},
-    {"method": "Phone", "contact": "778.858.8070"},
+    {"method": "Location", "contact": "Redmond, WA"},
     {"method": "Email", "contact": "krn.x.guo@gmail.com", "url": "mailto:krn.x.guo@gmail.com"}
   ],
   "socialMedia": [
     {"icon": "fa-github", "url": "https://github.com/ThePokedexter", "label": "Github"},
     {"icon": "fa-linkedin-square", "url": "https://linkedin.com/in/kxguo", "label": "LinkedIn"}
-  ],
-  "alert": {
-    "type": "success",
-    "text": "I am currently looking for a software developer role. Please feel free to contact me about new opportunities."
-  }
+  ]
 }
